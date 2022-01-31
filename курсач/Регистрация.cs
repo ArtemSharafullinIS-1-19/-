@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace курсач
 {
-    public partial class Form1 : Form
+    public partial class Регистрация : Form
     {
-        public Form1()
+        public Регистрация()
         {
             InitializeComponent();
         }
