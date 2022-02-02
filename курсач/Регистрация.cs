@@ -16,5 +16,37 @@ namespace курсач
         {
             InitializeComponent();
         }
+
+        private void Регистрация_Load(object sender, EventArgs e)
+        {
+            label1.Text = ("Введите Имя, Фамилию, Отчёство");
+            label2.Text = ("Введите Emaill");
+            label3.Text = ("Введите телефон");
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }
