@@ -38,9 +38,9 @@ namespace курсач
             // 
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.button1.Font = new System.Drawing.Font("Monotype Corsiva", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.Location = new System.Drawing.Point(128, 140);
+            this.button1.Location = new System.Drawing.Point(102, 140);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(130, 34);
+            this.button1.Size = new System.Drawing.Size(184, 34);
             this.button1.TabIndex = 0;
             this.button1.Text = "Авторизоваться";
             this.button1.UseVisualStyleBackColor = true;
@@ -49,9 +49,9 @@ namespace курсач
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Monotype Corsiva", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button2.Location = new System.Drawing.Point(128, 211);
+            this.button2.Location = new System.Drawing.Point(89, 205);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(130, 33);
+            this.button2.Size = new System.Drawing.Size(209, 33);
             this.button2.TabIndex = 1;
             this.button2.Text = "Зарегистрироваться";
             this.button2.UseVisualStyleBackColor = true;
