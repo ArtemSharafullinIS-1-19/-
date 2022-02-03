@@ -26,7 +26,7 @@ namespace курсач
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            
+          
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
@@ -36,13 +36,22 @@ namespace курсач
 
         private void textBox3_TextChanged(object sender, EventArgs e)
         {
-
+           
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
+           if (textBox1.Text == "Вы успешно зарегистрировались!")
+            {
+                MessageBox.Show("Вы успешно зарегистрировались!");
+            }
+           else
+            {
+                MessageBox.Show("Вы ввели не все данные!");
+            }
+
         }
+
 
         private void button2_Click(object sender, EventArgs e)
         {
