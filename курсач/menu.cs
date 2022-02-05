@@ -19,19 +19,27 @@ namespace курсач
 
         private void button1_Click(object sender, EventArgs e)
         {
+            
             Авторизация Авторизация = new Авторизация();
             Авторизация.ShowDialog();
+            
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             Регистрация Регистрация = new Регистрация();
             Регистрация.ShowDialog();
+            
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Close();
+            Application.Exit();
+        }
+
+        private void menu_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

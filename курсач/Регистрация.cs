@@ -22,6 +22,10 @@ namespace курсач
             label1.Text = ("Введите Имя, Фамилию, Отчёство");
             label2.Text = ("Введите Emaill");
             label3.Text = ("Введите телефон");
+
+            textBox1.Text = "";
+            textBox2.Text = "";
+            textBox3.Text = "";
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -41,21 +45,38 @@ namespace курсач
 
         private void button1_Click(object sender, EventArgs e)
         {
-           if (textBox1.Text == "Вы успешно зарегистрировались!")
+           if (textBox1.Text != "")
             {
-                MessageBox.Show("Вы успешно зарегистрировались!");
+
             }
            else
             {
-                MessageBox.Show("Вы ввели не все данные!");
+                MessageBox.Show("Вы не ввели ФИО!");
             }
+           if (textBox2.Text != "")
+            {
 
+            }
+           else
+            {
+                MessageBox.Show("Вы не ввели Email");
+            }
+           if (textBox3.Text != "")
+            {
+
+            }
+           else
+            {
+                MessageBox.Show("ВЫ не ввели телефон");
+            }
         }
 
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Close();
+            Hide();
+            menu menu = new menu();
+            menu.ShowDialog();
         }
     }
 }
