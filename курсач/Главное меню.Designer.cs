@@ -159,7 +159,7 @@ namespace курсач
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::курсач.Properties.Resources._2018_kawasaki_zx10r_4k_t8;
+            this.BackgroundImage = global::курсач.Properties.Resources.minimalizm_motocikl_moto_fon;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(789, 473);
             this.Controls.Add(this.guna2Button4);
