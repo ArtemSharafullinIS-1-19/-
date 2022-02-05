@@ -126,5 +126,8 @@
   <ItemGroup>
     <None Include="Resources\2018-kawasaki-zx10r-4k-t8.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimalizm-motocikl-moto-fon.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

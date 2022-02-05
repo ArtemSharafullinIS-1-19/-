@@ -103,6 +103,16 @@ namespace курсач.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap minimalizm_motocikl_moto_fon {
+            get {
+                object obj = ResourceManager.GetObject("minimalizm-motocikl-moto-fon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap qF5VIoYx {
             get {
                 object obj = ResourceManager.GetObject("qF5VIoYx", resourceCulture);

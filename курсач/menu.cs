@@ -17,29 +17,26 @@ namespace курсач
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void menu_Load(object sender, EventArgs e)
         {
-            
-            Авторизация Авторизация = new Авторизация();
-            Авторизация.ShowDialog();
             
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            Авторизация Авторизация = new Авторизация();
+            Авторизация.ShowDialog();
+        }
+
+        private void guna2Button2_Click(object sender, EventArgs e)
         {
             Регистрация Регистрация = new Регистрация();
             Регистрация.ShowDialog();
-            
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void guna2Button3_Click(object sender, EventArgs e)
         {
             Application.Exit();
-        }
-
-        private void menu_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }
