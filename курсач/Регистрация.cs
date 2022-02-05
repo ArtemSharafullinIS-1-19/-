@@ -43,36 +43,40 @@ namespace курсач
            
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void guna2Button1_Click(object sender, EventArgs e)
         {
-           if (textBox1.Text != "")
+            if (textBox1.Text != "")
             {
 
             }
-           else
+            else
             {
                 MessageBox.Show("Вы не ввели ФИО!");
             }
-           if (textBox2.Text != "")
+            if (textBox2.Text != "")
             {
 
             }
-           else
+            else
             {
                 MessageBox.Show("Вы не ввели Email");
             }
-           if (textBox3.Text != "")
+            if (textBox3.Text != "")
             {
 
             }
-           else
+            else
             {
                 MessageBox.Show("ВЫ не ввели телефон");
             }
+
+
+            Hide();
+            Профиль Профиль = new Профиль();
+            Профиль.ShowDialog();
         }
 
-
-        private void button2_Click(object sender, EventArgs e)
+        private void guna2Button2_Click(object sender, EventArgs e)
         {
             Hide();
             menu menu = new menu();

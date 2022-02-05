@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Guna.UI2, Version=2.0.2.9, Culture=neutral, PublicKeyToken=e4b9cdd7b4cde4b4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.2.9\lib\net40\Guna.UI2.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -60,6 +63,12 @@
     <Compile Include="Авторизация.Designer.cs">
       <DependentUpon>Авторизация.cs</DependentUpon>
     </Compile>
+    <Compile Include="Главное меню.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Главное меню.Designer.cs">
+      <DependentUpon>Главное меню.cs</DependentUpon>
+    </Compile>
     <Compile Include="Регистрация.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -77,13 +86,18 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Авторизация.resx">
       <DependentUpon>Авторизация.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Главное меню.resx">
+      <DependentUpon>Главное меню.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Регистрация.resx">
       <DependentUpon>Регистрация.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -96,6 +110,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\anime-girl-kawasaki-h2r-4k-kh-1360x768.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fonstola.ru_353687_1920x1200.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\qF5VIoYx.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kawasaki_Ninja_Fi_ABS_-_Candy_Burn_Orange.4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2018-kawasaki-zx10r-4k-t8.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
