@@ -118,22 +118,25 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Kawasaki_Ninja_Fi_ABS_-_Candy_Burn_Orange.4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Kawasaki_Ninja_Fi_ABS_-_Candy_Burn_Orange.4.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="qF5VIoYx" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\qF5VIoYx.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="anime-girl-kawasaki-h2r-4k-kh-1360x768" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\anime-girl-kawasaki-h2r-4k-kh-1360x768.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="2018-kawasaki-zx10r-4k-t8" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\2018-kawasaki-zx10r-4k-t8.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="minimalizm-motocikl-moto-fon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\minimalizm-motocikl-moto-fon.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="fonstola.ru_353687_1920x1200" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fonstola.ru_353687_1920x1200.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Kawasaki_Ninja_Fi_ABS_-_Candy_Burn_Orange.4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Kawasaki_Ninja_Fi_ABS_-_Candy_Burn_Orange.4.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="2018-kawasaki-zx10r-4k-t8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\2018-kawasaki-zx10r-4k-t8.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="minimalizm-motocikl-moto-fon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\minimalizm-motocikl-moto-fon.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="anime-girl-kawasaki-h2r-4k-kh-1360x768" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\anime-girl-kawasaki-h2r-4k-kh-1360x768.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="8NOhnHnAbCs" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\8NOhnHnAbCs.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

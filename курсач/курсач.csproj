@@ -129,5 +129,8 @@
   <ItemGroup>
     <None Include="Resources\minimalizm-motocikl-moto-fon.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8NOhnHnAbCs.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
