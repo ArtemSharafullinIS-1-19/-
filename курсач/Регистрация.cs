@@ -17,6 +17,8 @@ namespace курсач
             InitializeComponent();
         }
 
+        string test = "reg";
+
         private void Регистрация_Load(object sender, EventArgs e)
         {
             label1.Text = ("Введите Имя, Фамилию, Отчёство");
@@ -51,7 +53,7 @@ namespace курсач
             }
             else
             {
-                MessageBox.Show("Вы не ввели ФИО!");
+                label1.ForeColor = Color.Red;
             }
             if (textBox2.Text != "")
             {
@@ -59,7 +61,7 @@ namespace курсач
             }
             else
             {
-                MessageBox.Show("Вы не ввели Email");
+                label2.ForeColor = Color.Red;
             }
             if (textBox3.Text != "")
             {
@@ -67,13 +69,13 @@ namespace курсач
             }
             else
             {
-                MessageBox.Show("ВЫ не ввели телефон");
+                label3.ForeColor = Color.Red;
             }
+            
+           
 
-
-            Hide();
-            Профиль Профиль = new Профиль();
-            Профиль.ShowDialog();
+            
+            
         }
 
         private void guna2Button2_Click(object sender, EventArgs e)
