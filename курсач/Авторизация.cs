@@ -15,11 +15,12 @@ namespace курсач
         public Авторизация()
         {
             InitializeComponent();
+            guna2Button1.Enabled = false;
         }
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void guna2Button2_Click(object sender, EventArgs e)
@@ -28,5 +29,17 @@ namespace курсач
             menu menu = new menu();
             menu.ShowDialog();
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+            guna2Button1.Enabled = !string.IsNullOrWhiteSpace(textBox2.Text);
+        }
+
+        
     }
 }
