@@ -63,9 +63,29 @@ namespace курсач.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _0Y1CzJ4siug {
+            get {
+                object obj = ResourceManager.GetObject("0Y1CzJ4siug", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _2018_kawasaki_zx10r_4k_t8 {
             get {
                 object obj = ResourceManager.GetObject("2018-kawasaki-zx10r-4k-t8", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _52CiueHcMrE {
+            get {
+                object obj = ResourceManager.GetObject("52CiueHcMrE", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
