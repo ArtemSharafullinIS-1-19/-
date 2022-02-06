@@ -26,5 +26,15 @@ namespace курсач
         {
 
         }
+
+        private void Профиль_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2Button5_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

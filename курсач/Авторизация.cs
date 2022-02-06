@@ -20,12 +20,14 @@ namespace курсач
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            
+            this.Hide();
+            Профиль Профиль = new Профиль();
+            Профиль.ShowDialog();
         }
 
         private void guna2Button2_Click(object sender, EventArgs e)
         {
-            Hide();
+            this.Hide();
             menu menu = new menu();
             menu.ShowDialog();
         }

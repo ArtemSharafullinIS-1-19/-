@@ -43,7 +43,7 @@ namespace курсач
 
         private void textBox3_TextChanged(object sender, EventArgs e)
         {
-            guna2Button1.Enabled = !string.IsNullOrWhiteSpace(textBox3.Text);
+            guna2Button1.Enabled = !string.IsNullOrWhiteSpace(textBox3.Text);  
         }
 
         private void guna2Button1_Click(object sender, EventArgs e)

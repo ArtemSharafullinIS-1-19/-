@@ -24,12 +24,14 @@ namespace курсач
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
+            this.Hide();
             Авторизация Авторизация = new Авторизация();
             Авторизация.ShowDialog();
         }
 
         private void guna2Button2_Click(object sender, EventArgs e)
         {
+            this.Hide();
             Регистрация Регистрация = new Регистрация();
             Регистрация.ShowDialog();
         }
