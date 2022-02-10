@@ -34,7 +34,7 @@ namespace курсач
 
         private void guna2Button5_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            Application.Exit(); //Закрытие программы
         }
     }
 }
