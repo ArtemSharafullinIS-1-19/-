@@ -127,6 +127,9 @@
   <data name="qF5VIoYx" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\qF5VIoYx.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="skull-scooter-minimalism-minimalist" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\skull-scooter-minimalism-minimalist.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="minimalizm-motocikl-moto-fon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\minimalizm-motocikl-moto-fon.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -136,13 +139,16 @@
   <data name="8NOhnHnAbCs" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\8NOhnHnAbCs.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="2018-kawasaki-zx10r-4k-t8" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\2018-kawasaki-zx10r-4k-t8.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="anime-girl-kawasaki-h2r-4k-kh-1360x768" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\anime-girl-kawasaki-h2r-4k-kh-1360x768.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="2018-kawasaki-zx10r-4k-t8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\2018-kawasaki-zx10r-4k-t8.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="0Y1CzJ4siug" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\0Y1CzJ4siug.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="kawasaki_ninja_250r_2009_1280x800_red" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\kawasaki_ninja_250r_2009_1280x800_red.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

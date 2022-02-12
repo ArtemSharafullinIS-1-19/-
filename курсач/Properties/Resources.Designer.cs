@@ -19,7 +19,7 @@ namespace курсач.Properties {
     // с помощью такого средства, как ResGen или Visual Studio.
     // Чтобы добавить или удалить член, измените файл .ResX и снова запустите ResGen
     // с параметром /str или перестройте свой проект VS.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
@@ -123,6 +123,16 @@ namespace курсач.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap kawasaki_ninja_250r_2009_1280x800_red {
+            get {
+                object obj = ResourceManager.GetObject("kawasaki_ninja_250r_2009_1280x800_red", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Kawasaki_Ninja_Fi_ABS___Candy_Burn_Orange_4 {
             get {
                 object obj = ResourceManager.GetObject("Kawasaki_Ninja_Fi_ABS_-_Candy_Burn_Orange.4", resourceCulture);
@@ -146,6 +156,16 @@ namespace курсач.Properties {
         internal static System.Drawing.Bitmap qF5VIoYx {
             get {
                 object obj = ResourceManager.GetObject("qF5VIoYx", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap skull_scooter_minimalism_minimalist {
+            get {
+                object obj = ResourceManager.GetObject("skull-scooter-minimalism-minimalist", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
