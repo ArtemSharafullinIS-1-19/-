@@ -223,5 +223,17 @@
   <ItemGroup>
     <None Include="Resources\11661472_lens-flare-flare-transparent-solar-transparent-png.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-transparent-orange-light-art-illustration-light-triangle-symmetry-pattern-golden-light-effect-angle-golden-frame-effect.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2-25443_light.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-png.ru-78.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\free-png.ru-781.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -30,6 +30,13 @@ namespace курсач
 
         private void guna2GradientButton1_Click(object sender, EventArgs e)
         {
+            
+
+            
+        }
+
+        private void guna2ImageButton1_Click(object sender, EventArgs e)
+        {
             if (pictureBox1.Visible == true)
             {
                 pictureBox1.Visible = false;
@@ -38,8 +45,6 @@ namespace курсач
             {
                 pictureBox1.Visible = true;
             }
-
-            
         }
     }
 }

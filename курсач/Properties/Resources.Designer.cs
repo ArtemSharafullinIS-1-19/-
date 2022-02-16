@@ -83,6 +83,16 @@ namespace курсач.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _2_25443_light {
+            get {
+                object obj = ResourceManager.GetObject("2-25443_light", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _2018_kawasaki_zx10r_4k_t8 {
             get {
                 object obj = ResourceManager.GetObject("2018-kawasaki-zx10r-4k-t8", resourceCulture);
@@ -183,6 +193,26 @@ namespace курсач.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap free_png_ru_78 {
+            get {
+                object obj = ResourceManager.GetObject("free-png.ru-78", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap free_png1 {
+            get {
+                object obj = ResourceManager.GetObject("free-png1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap kawasaki_ninja_250r_2009_1280x800_red {
             get {
                 object obj = ResourceManager.GetObject("kawasaki_ninja_250r_2009_1280x800_red", resourceCulture);
@@ -206,6 +236,17 @@ namespace курсач.Properties {
         internal static System.Drawing.Bitmap minimalizm_motocikl_moto_fon {
             get {
                 object obj = ResourceManager.GetObject("minimalizm-motocikl-moto-fon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap png_transparent_orange_light_art_illustration_light_triangle_symmetry_pattern_golden_light_effect_angle_golden_frame_effect {
+            get {
+                object obj = ResourceManager.GetObject("png-transparent-orange-light-art-illustration-light-triangle-symmetry-pattern-gol" +
+                        "den-light-effect-angle-golden-frame-effect", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
