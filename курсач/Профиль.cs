@@ -19,7 +19,9 @@ namespace курсач
 
         private void Профиль_Load(object sender, EventArgs e)
         {
-
+            label4.Text = "";
+            label5.Text = "";
+            label6.Text = "";
         }
 
         private void guna2GradientButton1_Click(object sender, EventArgs e)

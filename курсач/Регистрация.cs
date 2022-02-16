@@ -15,7 +15,7 @@ namespace курсач
         public Регистрация()
         {
             InitializeComponent();
-            this.guna2Button1.Enabled = false; //Выключение кнопки guna2Button1
+            this.guna2GradientButton1.Enabled = false; //Выключение кнопки guna2Button1
         }
 
         
@@ -28,44 +28,15 @@ namespace курсач
             label3.Text = ("Введите телефон");
 
             //Переменные для textBox.Text
-            textBox1.Text = "";
-            textBox2.Text = "";
-            textBox3.Text = "";
+            guna2TextBox1.Text = "";
+            guna2TextBox2.Text = "";
+            guna2TextBox3.Text = "";
 
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void guna2GradientButton1_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text == "")
-            {
-
-            }
-            
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-            if (textBox2.Text == "")
-            {
-
-            }
-           
-        }
-
-        private void textBox3_TextChanged(object sender, EventArgs e)
-        {
-            
-            if (textBox3.Text == "")
-            {
-
-            }
-
-            guna2Button1.Enabled = !string.IsNullOrWhiteSpace(textBox3.Text); //Включение кнопки guna2Button1 при заполнении textBox3.Text
-        }
-
-        private void guna2Button1_Click(object sender, EventArgs e)
-        {
-            if (textBox1.Text != "")
+            if (guna2TextBox1.Text != "")
             {
                 label1.Font = new Font("Times New Roman", 9, FontStyle.Regular);
                 label1.ForeColor = Color.Black;
@@ -78,7 +49,7 @@ namespace курсач
                 label1.Font = new Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold);
                 //Если значение не верно, то label будет красного цвета
             }
-            if (textBox2.Text != "")
+            if (guna2TextBox2.Text != "")
             {
                 label2.Font = new Font("Times New Roman", 9, FontStyle.Regular);
                 label2.ForeColor = Color.Black;
@@ -91,7 +62,7 @@ namespace курсач
                 label2.Font = new Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold);
                 //Если значение не верно, то label будет красного цвета
             }
-            if (textBox3.Text != "")
+            if (guna2TextBox3.Text != "")
             {
                 label3.Font = new Font("Times New Roman", 9, FontStyle.Regular);
                 label3.ForeColor = Color.Black;
@@ -111,16 +82,43 @@ namespace курсач
             Главноеменю Профиль = new Главноеменю();
             Профиль.ShowDialog();
 
-
-            
             
         }
 
-        private void guna2Button2_Click(object sender, EventArgs e)
+        private void guna2GradientButton2_Click(object sender, EventArgs e)
         {
             Hide();
             menu menu = new menu();
             menu.ShowDialog();
         }
+
+        private void guna2TextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+            if (guna2TextBox1.Text == "")
+            {
+
+            }
+        }
+
+        private void guna2TextBox2_TextChanged(object sender, EventArgs e)
+        {
+            if (guna2TextBox2.Text == "")
+            {
+
+            }
+        }
+
+        private void guna2TextBox3_TextChanged(object sender, EventArgs e)
+        {
+            if (guna2TextBox3.Text == "")
+            {
+
+            }
+
+            this.guna2GradientButton1.Enabled = !string.IsNullOrWhiteSpace(guna2TextBox3.Text); //Включение кнопки guna2Button1 при заполнении textBox3.Text
+        }
+
+      
     }
 }
