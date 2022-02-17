@@ -16,7 +16,7 @@ namespace курсач
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Просмотр_мотоциклов());
+            Application.Run(new menu());
         }
     }
 }
