@@ -73,6 +73,7 @@ namespace курсач
             this.guna2GradientButton1.TabIndex = 3;
             this.guna2GradientButton1.Text = "Авторизоваться";
             this.guna2GradientButton1.UseTransparentBackground = true;
+            this.guna2GradientButton1.Click += new System.EventHandler(this.guna2GradientButton1_Click);
             // 
             // guna2GradientButton2
             // 
@@ -97,6 +98,7 @@ namespace курсач
             this.guna2GradientButton2.TabIndex = 4;
             this.guna2GradientButton2.Text = "Зарегистрироваться";
             this.guna2GradientButton2.UseTransparentBackground = true;
+            this.guna2GradientButton2.Click += new System.EventHandler(this.guna2GradientButton2_Click);
             // 
             // guna2GradientButton3
             // 
@@ -121,6 +123,7 @@ namespace курсач
             this.guna2GradientButton3.TabIndex = 5;
             this.guna2GradientButton3.Text = "Выход";
             this.guna2GradientButton3.UseTransparentBackground = true;
+            this.guna2GradientButton3.Click += new System.EventHandler(this.guna2GradientButton3_Click);
             // 
             // menu
             // 

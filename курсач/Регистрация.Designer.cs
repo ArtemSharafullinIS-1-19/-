@@ -86,7 +86,7 @@ namespace курсач
             this.guna2GradientButton1.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.guna2GradientButton1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.guna2GradientButton1.FillColor = System.Drawing.Color.Black;
-            this.guna2GradientButton1.FillColor2 = System.Drawing.Color.Red;
+            this.guna2GradientButton1.FillColor2 = System.Drawing.Color.Silver;
             this.guna2GradientButton1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2GradientButton1.ForeColor = System.Drawing.Color.White;
             this.guna2GradientButton1.IndicateFocus = true;
@@ -110,9 +110,10 @@ namespace курсач
             this.guna2GradientButton2.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.guna2GradientButton2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.guna2GradientButton2.FillColor = System.Drawing.Color.Black;
-            this.guna2GradientButton2.FillColor2 = System.Drawing.Color.Red;
+            this.guna2GradientButton2.FillColor2 = System.Drawing.Color.Silver;
             this.guna2GradientButton2.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2GradientButton2.ForeColor = System.Drawing.Color.White;
+            this.guna2GradientButton2.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
             this.guna2GradientButton2.IndicateFocus = true;
             this.guna2GradientButton2.Location = new System.Drawing.Point(12, 381);
             this.guna2GradientButton2.Name = "guna2GradientButton2";

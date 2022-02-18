@@ -22,21 +22,21 @@ namespace курсач
             
         }
 
-        private void guna2Button1_Click(object sender, EventArgs e)
+        private void guna2GradientButton1_Click(object sender, EventArgs e)
         {
             this.Hide();
             Авторизация Авторизация = new Авторизация();
             Авторизация.ShowDialog();
         }
 
-        private void guna2Button2_Click(object sender, EventArgs e)
+        private void guna2GradientButton2_Click(object sender, EventArgs e)
         {
             this.Hide();
             Регистрация Регистрация = new Регистрация();
             Регистрация.ShowDialog();
         }
 
-        private void guna2Button3_Click(object sender, EventArgs e)
+        private void guna2GradientButton3_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
