@@ -75,6 +75,7 @@ namespace курсач
             this.Controls.Add(this.guna2ImageButton1);
             this.Controls.Add(this.pictureBox1);
             this.Name = "Просмотр_мотоциклов";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Просмотр_мотоциклов";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

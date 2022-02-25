@@ -138,6 +138,7 @@ namespace курсач
             this.Controls.Add(this.guna2GradientButton1);
             this.Controls.Add(this.guna2PictureBox1);
             this.Name = "menu";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.menu_Load);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();

@@ -155,7 +155,7 @@ namespace курсач
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.BackgroundImage = global::курсач.Properties.Resources.minimalizm_motocikl_moto_fon;
+            this.BackgroundImage = global::курсач.Properties.Resources.kawasaki_ninja_250r_2009_1280x800_red;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(737, 423);
             this.Controls.Add(this.guna2GradientButton1);
@@ -167,6 +167,7 @@ namespace курсач
             this.Controls.Add(this.label1);
             this.Controls.Add(this.guna2ImageButton1);
             this.Name = "Профиль";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Профиль";
             this.Load += new System.EventHandler(this.Профиль_Load);
             this.ResumeLayout(false);
