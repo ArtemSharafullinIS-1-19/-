@@ -38,7 +38,9 @@ namespace курсач
             this.guna2GradientButton4 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2GradientButton5 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // imageList1
@@ -74,7 +76,7 @@ namespace курсач
             this.guna2GradientButton1.ForeColor = System.Drawing.Color.White;
             this.guna2GradientButton1.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
             this.guna2GradientButton1.IndicateFocus = true;
-            this.guna2GradientButton1.Location = new System.Drawing.Point(127, 147);
+            this.guna2GradientButton1.Location = new System.Drawing.Point(12, 101);
             this.guna2GradientButton1.Name = "guna2GradientButton1";
             this.guna2GradientButton1.Size = new System.Drawing.Size(144, 50);
             this.guna2GradientButton1.TabIndex = 15;
@@ -98,7 +100,7 @@ namespace курсач
             this.guna2GradientButton2.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2GradientButton2.ForeColor = System.Drawing.Color.White;
             this.guna2GradientButton2.IndicateFocus = true;
-            this.guna2GradientButton2.Location = new System.Drawing.Point(127, 228);
+            this.guna2GradientButton2.Location = new System.Drawing.Point(12, 167);
             this.guna2GradientButton2.Name = "guna2GradientButton2";
             this.guna2GradientButton2.Size = new System.Drawing.Size(144, 50);
             this.guna2GradientButton2.TabIndex = 16;
@@ -123,7 +125,7 @@ namespace курсач
             this.guna2GradientButton3.ForeColor = System.Drawing.Color.White;
             this.guna2GradientButton3.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
             this.guna2GradientButton3.IndicateFocus = true;
-            this.guna2GradientButton3.Location = new System.Drawing.Point(274, 291);
+            this.guna2GradientButton3.Location = new System.Drawing.Point(12, 367);
             this.guna2GradientButton3.Name = "guna2GradientButton3";
             this.guna2GradientButton3.Size = new System.Drawing.Size(144, 55);
             this.guna2GradientButton3.TabIndex = 17;
@@ -147,7 +149,7 @@ namespace курсач
             this.guna2GradientButton4.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2GradientButton4.ForeColor = System.Drawing.Color.White;
             this.guna2GradientButton4.IndicateFocus = true;
-            this.guna2GradientButton4.Location = new System.Drawing.Point(433, 228);
+            this.guna2GradientButton4.Location = new System.Drawing.Point(12, 236);
             this.guna2GradientButton4.Name = "guna2GradientButton4";
             this.guna2GradientButton4.Size = new System.Drawing.Size(144, 50);
             this.guna2GradientButton4.TabIndex = 18;
@@ -171,7 +173,7 @@ namespace курсач
             this.guna2GradientButton5.ForeColor = System.Drawing.Color.White;
             this.guna2GradientButton5.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
             this.guna2GradientButton5.IndicateFocus = true;
-            this.guna2GradientButton5.Location = new System.Drawing.Point(433, 147);
+            this.guna2GradientButton5.Location = new System.Drawing.Point(12, 302);
             this.guna2GradientButton5.Name = "guna2GradientButton5";
             this.guna2GradientButton5.Size = new System.Drawing.Size(144, 50);
             this.guna2GradientButton5.TabIndex = 19;
@@ -193,6 +195,17 @@ namespace курсач
             this.guna2PictureBox1.TabStop = false;
             this.guna2PictureBox1.UseTransparentBackground = true;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = global::курсач.Properties.Resources._2_25443_light;
+            this.pictureBox1.Location = new System.Drawing.Point(417, 101);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(218, 133);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 21;
+            this.pictureBox1.TabStop = false;
+            // 
             // Главноеменю
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -200,6 +213,7 @@ namespace курсач
             this.BackgroundImage = global::курсач.Properties.Resources.kawasaki_ninja_250r_2009_1280x800_red;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(700, 451);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.guna2PictureBox1);
             this.Controls.Add(this.guna2GradientButton5);
             this.Controls.Add(this.guna2GradientButton4);
@@ -212,6 +226,7 @@ namespace курсач
             this.Text = "Главное меню";
             this.Load += new System.EventHandler(this.Профиль_Load);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -227,5 +242,6 @@ namespace курсач
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton4;
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton5;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

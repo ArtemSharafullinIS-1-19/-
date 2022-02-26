@@ -36,6 +36,15 @@ namespace курсач
 
         private void guna2GradientButton1_Click(object sender, EventArgs e)
         {
+            if (pictureBox2.Visible == true)
+            {
+                pictureBox2.Visible = false;
+            }
+            else
+            {
+                pictureBox2.Visible = true;
+            }
+
             if (guna2TextBox1.Text != "")
             {
                 label1.Font = new Font("Times New Roman", 9, FontStyle.Regular);

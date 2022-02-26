@@ -21,6 +21,15 @@ namespace курсач
 
         private void guna2GradientButton1_Click(object sender, EventArgs e)
         {
+            if (pictureBox2.Visible == true)
+            {
+                pictureBox2.Visible = false;
+            }
+            else
+            {
+                pictureBox2.Visible = true;
+            }
+
             MessageBox.Show("Вы успешно авторизовались"); //Появление окна с информацией
 
             this.Hide();
