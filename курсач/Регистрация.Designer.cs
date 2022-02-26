@@ -47,34 +47,37 @@ namespace курсач
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(9, 130);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 15);
+            this.label1.Size = new System.Drawing.Size(38, 15);
             this.label1.TabIndex = 5;
-            this.label1.Text = "label1";
+            this.label1.Text = "ФИО";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(12, 187);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 15);
+            this.label2.Size = new System.Drawing.Size(99, 15);
             this.label2.TabIndex = 6;
-            this.label2.Text = "label2";
+            this.label2.Text = "Номер телефона";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label3.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(12, 244);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(35, 15);
+            this.label3.Size = new System.Drawing.Size(38, 15);
             this.label3.TabIndex = 7;
-            this.label3.Text = "label3";
+            this.label3.Text = "Email";
             // 
             // guna2GradientButton1
             // 
@@ -145,7 +148,8 @@ namespace курсач
             this.guna2TextBox1.Location = new System.Drawing.Point(12, 148);
             this.guna2TextBox1.Name = "guna2TextBox1";
             this.guna2TextBox1.PasswordChar = '\0';
-            this.guna2TextBox1.PlaceholderText = "";
+            this.guna2TextBox1.PlaceholderForeColor = System.Drawing.Color.Silver;
+            this.guna2TextBox1.PlaceholderText = "Укажите Вашу фамилию";
             this.guna2TextBox1.SelectedText = "";
             this.guna2TextBox1.Size = new System.Drawing.Size(255, 36);
             this.guna2TextBox1.TabIndex = 12;
@@ -171,7 +175,8 @@ namespace курсач
             this.guna2TextBox2.Location = new System.Drawing.Point(12, 205);
             this.guna2TextBox2.Name = "guna2TextBox2";
             this.guna2TextBox2.PasswordChar = '\0';
-            this.guna2TextBox2.PlaceholderText = "";
+            this.guna2TextBox2.PlaceholderForeColor = System.Drawing.Color.Silver;
+            this.guna2TextBox2.PlaceholderText = "Укажите Ваш телефон";
             this.guna2TextBox2.SelectedText = "";
             this.guna2TextBox2.Size = new System.Drawing.Size(255, 36);
             this.guna2TextBox2.TabIndex = 13;
@@ -197,7 +202,7 @@ namespace курсач
             this.guna2TextBox3.Location = new System.Drawing.Point(12, 262);
             this.guna2TextBox3.Name = "guna2TextBox3";
             this.guna2TextBox3.PasswordChar = '\0';
-            this.guna2TextBox3.PlaceholderText = "";
+            this.guna2TextBox3.PlaceholderText = "Укажите Ваш Email";
             this.guna2TextBox3.SelectedText = "";
             this.guna2TextBox3.Size = new System.Drawing.Size(255, 36);
             this.guna2TextBox3.TabIndex = 14;
@@ -210,7 +215,7 @@ namespace курсач
             this.pictureBox1.Image = global::курсач.Properties.Resources.download__3_1;
             this.pictureBox1.Location = new System.Drawing.Point(79, 12);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(553, 124);
+            this.pictureBox1.Size = new System.Drawing.Size(540, 108);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 15;
             this.pictureBox1.TabStop = false;

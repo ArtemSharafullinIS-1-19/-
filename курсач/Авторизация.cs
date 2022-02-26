@@ -16,7 +16,7 @@ namespace курсач
         public Авторизация()
         {
             InitializeComponent();
-            guna2GradientButton1.Enabled = false; //Выключение кнопки guna2Button1
+            
         }
 
         private void guna2GradientButton1_Click(object sender, EventArgs e)
@@ -30,11 +30,19 @@ namespace курсач
                 pictureBox2.Visible = true;
             }
 
-            MessageBox.Show("Вы успешно авторизовались"); //Появление окна с информацией
+            if (guna2TextBox1.Text != "" & guna2TextBox2.Text != "")
+            {
+                MessageBox.Show("Вы успешно авторизовались");
 
-            this.Hide();
-            Главноеменю Профиль = new Главноеменю(); //Открытие формы Профиля при авторизации
-            Профиль.ShowDialog();
+                this.Hide();
+                Профиль Профиль = new Профиль();
+                Профиль.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Вы ввели некоректные данные");
+            }
+           
         }
 
         private void guna2GradientButton2_Click(object sender, EventArgs e)
@@ -44,14 +52,9 @@ namespace курсач
             menu.ShowDialog();
         }
 
-        private void guna2TextBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void guna2TextBox2_TextChanged(object sender, EventArgs e)
         {
-            guna2GradientButton1.Enabled = !string.IsNullOrWhiteSpace(guna2TextBox1.Text);
+           
         }
     }
 }

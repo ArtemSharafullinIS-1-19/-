@@ -46,5 +46,10 @@ namespace курсач
                 pictureBox1.Visible = true;
             }
         }
+
+        private void Просмотр_мотоциклов_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -112,6 +112,12 @@
     <Compile Include="Главное меню.Designer.cs">
       <DependentUpon>Главное меню.cs</DependentUpon>
     </Compile>
+    <Compile Include="Оформление проката.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Оформление проката.Designer.cs">
+      <DependentUpon>Оформление проката.cs</DependentUpon>
+    </Compile>
     <Compile Include="Просмотр мотоциклов.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -148,6 +154,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Главное меню.resx">
       <DependentUpon>Главное меню.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Оформление проката.resx">
+      <DependentUpon>Оформление проката.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Просмотр мотоциклов.resx">
       <DependentUpon>Просмотр мотоциклов.cs</DependentUpon>

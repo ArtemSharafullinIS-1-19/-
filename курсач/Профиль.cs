@@ -30,5 +30,24 @@ namespace курсач
             Главноеменю Главноеменю = new Главноеменю();
             Главноеменю.ShowDialog();
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void guna2GradientButton2_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Вы уверены, что хотите отменить прокат?", "Отмена проката", MessageBoxButtons.YesNo);
+
+        }
+
+        private void guna2GradientButton3_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Вы уверены, что хотите выйти из аккаунта?", "Выйти из аккаунта?", MessageBoxButtons.YesNo);
+            Hide();
+            menu menu = new menu();
+            menu.ShowDialog();
+        }
     }
 }

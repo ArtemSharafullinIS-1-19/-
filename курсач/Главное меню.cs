@@ -45,5 +45,11 @@ namespace курсач
         {
             Application.Exit();
         }
+
+        private void guna2GradientButton5_Click(object sender, EventArgs e)
+        {
+            Оформление_проката Оформление_проката = new Оформление_проката();
+            Оформление_проката.ShowDialog();
+        }
     }
 }

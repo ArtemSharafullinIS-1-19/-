@@ -15,7 +15,7 @@ namespace курсач
         public Регистрация()
         {
             InitializeComponent();
-            this.guna2GradientButton1.Enabled = false; //Выключение кнопки guna2Button1
+            
         }
 
         
@@ -32,6 +32,8 @@ namespace курсач
             guna2TextBox2.Text = "";
             guna2TextBox3.Text = "";
 
+            
+
         }
 
         private void guna2GradientButton1_Click(object sender, EventArgs e)
@@ -47,8 +49,8 @@ namespace курсач
 
             if (guna2TextBox1.Text != "")
             {
-                label1.Font = new Font("Times New Roman", 9, FontStyle.Regular);
-                label1.ForeColor = Color.Black;
+                label1.Font = new Font("Times New Roman", 9F, FontStyle.Bold);
+                label1.ForeColor = Color.White;
                 //Если значение верное, то label будет обычного цвета
             }
             else
@@ -60,8 +62,8 @@ namespace курсач
             }
             if (guna2TextBox2.Text != "")
             {
-                label2.Font = new Font("Times New Roman", 9, FontStyle.Regular);
-                label2.ForeColor = Color.Black;
+                label2.Font = new Font("Times New Roman", 9F, FontStyle.Bold);
+                label2.ForeColor = Color.White;
                 //Если значение верное, то label будет обычного цвета
             }
             else
@@ -73,8 +75,8 @@ namespace курсач
             }
             if (guna2TextBox3.Text != "")
             {
-                label3.Font = new Font("Times New Roman", 9, FontStyle.Regular);
-                label3.ForeColor = Color.Black;
+                label3.Font = new Font("Times New Roman", 9F, FontStyle.Bold);
+                label3.ForeColor = Color.White;
                 //Если значение верное, то label будет обычного цвета
             }
             else
@@ -85,11 +87,21 @@ namespace курсач
                 //Если значение не верно, то label будет красного цвета
             }
 
-            MessageBox.Show("Вы успешно зарегистрировались");
+            if (guna2TextBox1.Text != "" & guna2TextBox2.Text != "" & guna2TextBox3.Text != "")
+            {
+                MessageBox.Show("Вы успешно зарегистрировались!");
 
-            Hide();
-            Главноеменю Профиль = new Главноеменю();
-            Профиль.ShowDialog();
+                this.Hide();
+                Профиль Профиль = new Профиль();
+                Профиль.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Вы ввели не все данные!");
+            }
+           
+
+            
 
             
         }
@@ -104,28 +116,17 @@ namespace курсач
         private void guna2TextBox1_TextChanged(object sender, EventArgs e)
         {
 
-            if (guna2TextBox1.Text == "")
-            {
-
-            }
+            
         }
 
         private void guna2TextBox2_TextChanged(object sender, EventArgs e)
         {
-            if (guna2TextBox2.Text == "")
-            {
-
-            }
+            
         }
 
         private void guna2TextBox3_TextChanged(object sender, EventArgs e)
         {
-            if (guna2TextBox3.Text == "")
-            {
-
-            }
-
-            this.guna2GradientButton1.Enabled = !string.IsNullOrWhiteSpace(guna2TextBox3.Text); //Включение кнопки guna2Button1 при заполнении textBox3.Text
+           
         }
 
       
