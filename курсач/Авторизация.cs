@@ -21,6 +21,15 @@ namespace курсач
 
         private void guna2GradientButton1_Click(object sender, EventArgs e)
         {
+            string loginuser = guna2TextBox1.Text;
+            string passuser = guna2TextBox2.Text;
+
+            BD bd = new BD();
+
+            DataTable table = new DataTable();
+
+            MySqlDataAdapter adapter = new MySqlDataAdapter();
+
             if (pictureBox2.Visible == true)
             {
                 pictureBox2.Visible = false;
@@ -55,6 +64,15 @@ namespace курсач
         private void guna2TextBox2_TextChanged(object sender, EventArgs e)
         {
            
+        }
+
+        private void Авторизация_Load(object sender, EventArgs e)
+        {
+            ToolTip t = new ToolTip();
+            t.SetToolTip(guna2GradientButton1, "Нажмите, чтоб войти");
+
+            ToolTip t2 = new ToolTip();
+            t2.SetToolTip(guna2GradientButton2, "Нажмите, чтоб выйти в меню");
         }
     }
 }

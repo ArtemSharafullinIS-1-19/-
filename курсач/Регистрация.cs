@@ -22,10 +22,7 @@ namespace курсач
 
         private void Регистрация_Load(object sender, EventArgs e)
         {
-            //Вывод информации в label
-            label1.Text = ("Введите Имя, Фамилию, Отчёство"); 
-            label2.Text = ("Введите Email");
-            label3.Text = ("Введите телефон");
+            
 
             //Переменные для textBox.Text
             guna2TextBox1.Text = "";
@@ -68,7 +65,7 @@ namespace курсач
             }
             else
             {
-                label2.Text = "Введите Email!";
+                label2.Text = "Введите Ваш логин!";
                 label2.ForeColor = Color.Red;
                 label2.Font = new Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold);
                 //Если значение не верно, то label будет красного цвета
@@ -81,9 +78,22 @@ namespace курсач
             }
             else
             {
-                label3.Text = "Введите телефон!";
+                label3.Text = "Введите Ваш Email!";
                 label3.ForeColor = Color.Red;
                 label3.Font = new Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold);
+                //Если значение не верно, то label будет красного цвета
+            }
+            if (guna2TextBox4.Text != "")
+            {
+                label4.Font = new Font("Times New Roman", 9F, FontStyle.Bold);
+                label4.ForeColor = Color.White;
+                //Если значение верное, то label будет обычного цвета
+            }
+            else
+            {
+                label4.Text = "Введите Ваш телефон!";
+                label4.ForeColor = Color.Red;
+                label4.Font = new Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold);
                 //Если значение не верно, то label будет красного цвета
             }
 

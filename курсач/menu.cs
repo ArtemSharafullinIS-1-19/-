@@ -19,7 +19,11 @@ namespace курсач
 
         private void menu_Load(object sender, EventArgs e)
         {
-            
+            ToolTip t = new ToolTip();
+            t.SetToolTip(guna2GradientButton1, "Нажмите, чтоб авторизоваться");
+
+            ToolTip t2 = new ToolTip();
+            t2.SetToolTip(guna2GradientButton2, "Нажмите, чтоб зарегистрироваться");
         }
 
         private void guna2GradientButton1_Click(object sender, EventArgs e)
@@ -27,6 +31,7 @@ namespace курсач
             this.Hide();
             Авторизация Авторизация = new Авторизация();
             Авторизация.ShowDialog();
+
         }
 
         private void guna2GradientButton2_Click(object sender, EventArgs e)
