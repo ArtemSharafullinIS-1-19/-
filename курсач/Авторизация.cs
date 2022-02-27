@@ -101,6 +101,7 @@ namespace курсач
 
             ToolTip t2 = new ToolTip();
             t2.SetToolTip(guna2GradientButton2, "Нажмите, чтоб выйти в меню");
+
         }
     }
 }
