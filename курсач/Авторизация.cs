@@ -30,6 +30,19 @@ namespace курсач
 
             MySqlDataAdapter adapter = new MySqlDataAdapter();
 
+            MySqlCommand command = new MySqlCommand("SELECT * FROM 'users' WHERE 'login' = @ul AND 'pass' = @up", bd.getConnection());
+            command.Parameters.Add("@ul", MySqlDbType.VarChar).Value = loginuser;
+            command.Parameters.Add("@up", MySqlDbType.VarChar).Value = passuser;
+
+            adapter.SelectCommand = command;
+            adapter.Fill(table);
+
+            if (table.Rows.Count > 0)
+                MessageBox.Show("Вы успешно авторизовались!");
+            else
+                MessageBox.Show("Вы ввели некорректные данные!");
+
+
             if (pictureBox2.Visible == true)
             {
                 pictureBox2.Visible = false;
@@ -39,18 +52,7 @@ namespace курсач
                 pictureBox2.Visible = true;
             }
 
-            if (guna2TextBox1.Text != "" & guna2TextBox2.Text != "")
-            {
-                MessageBox.Show("Вы успешно авторизовались");
-
-                this.Hide();
-                Профиль Профиль = new Профиль();
-                Профиль.ShowDialog();
-            }
-            else
-            {
-                MessageBox.Show("Вы ввели некоректные данные");
-            }
+            
            
         }
 

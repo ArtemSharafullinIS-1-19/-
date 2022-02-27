@@ -9,7 +9,7 @@ namespace курсач
 {
     internal class BD
     {
-        MySqlConnection connection = new MySqlConnection("server = Localhost; port = 3306; username = st_1_29_19@localhost; password = 85653548; database = st_1_29_19");
+        MySqlConnection connection = new MySqlConnection("server = localhost; port = 3306; username = st_1_29_19; password = 85653548; database = users");
 
         public void openConnection()
         {
