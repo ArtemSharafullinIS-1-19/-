@@ -77,9 +77,9 @@ namespace курсач
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(12, 244);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(38, 15);
+            this.label3.Size = new System.Drawing.Size(48, 15);
             this.label3.TabIndex = 7;
-            this.label3.Text = "Email";
+            this.label3.Text = "Пароль";
             // 
             // guna2GradientButton1
             // 
@@ -204,7 +204,7 @@ namespace курсач
             this.guna2TextBox3.Location = new System.Drawing.Point(12, 262);
             this.guna2TextBox3.Name = "guna2TextBox3";
             this.guna2TextBox3.PasswordChar = '\0';
-            this.guna2TextBox3.PlaceholderText = "Укажите Ваш Email";
+            this.guna2TextBox3.PlaceholderText = "Придумайте пароль";
             this.guna2TextBox3.SelectedText = "";
             this.guna2TextBox3.Size = new System.Drawing.Size(255, 36);
             this.guna2TextBox3.TabIndex = 14;
