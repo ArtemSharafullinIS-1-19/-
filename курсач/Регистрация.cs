@@ -36,44 +36,6 @@ namespace курсач
 
         private void guna2GradientButton1_Click(object sender, EventArgs e)
         {
-            BD bd = new BD();
-            MySqlCommand command = new MySqlCommand("INSERT INTO `users` (FIO, pass, phone, login) VALUES(@FIO, @pass, @phone, @login", bd.getConnection());
-
-            command.Parameters.Add("@FIO", MySqlDbType.VarChar).Value = guna2TextBox1.Text;
-            command.Parameters.Add("@pass", MySqlDbType.VarChar).Value = guna2TextBox3.Text;
-            command.Parameters.Add("@phone", MySqlDbType.VarChar).Value = guna2TextBox4.Text;
-            command.Parameters.Add("@login", MySqlDbType.VarChar).Value = guna2TextBox2.Text;
-
-
-            bd.openConnection();
-
-            if (command.ExecuteNonQuery() == 1)
-            {
-                MessageBox.Show("Аккаунт был успешно зарегистрирован!");
-
-                this.Hide();
-                Профиль Профиль = new Профиль();
-                Профиль.ShowDialog();
-            }
-            else
-            {
-                MessageBox.Show("Аккаунт не был зарегистрирован!");
-            }
-
-            bd.closeConnection();
-            
-
-
-
-            if (pictureBox2.Visible == true)
-            {
-                pictureBox2.Visible = false;
-            }
-            else
-            {
-                pictureBox2.Visible = true;
-            }
-
             if (guna2TextBox1.Text != "")
             {
                 label1.Font = new Font("Times New Roman", 9F, FontStyle.Bold);
@@ -126,6 +88,44 @@ namespace курсач
                 label4.Font = new Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold);
                 //Если значение не верно, то label будет красного цвета
             }
+
+            BD bd = new BD();
+            MySqlCommand command = new MySqlCommand("INSERT INTO `users` (FIO, pass, phone, login) VALUES(@FIO, @pass, @phone, @login", bd.getConnection());
+
+            command.Parameters.Add("@FIO", MySqlDbType.VarChar).Value = guna2TextBox1.Text;
+            command.Parameters.Add("@pass", MySqlDbType.VarChar).Value = guna2TextBox3.Text;
+            command.Parameters.Add("@phone", MySqlDbType.VarChar).Value = guna2TextBox4.Text;
+            command.Parameters.Add("@login", MySqlDbType.VarChar).Value = guna2TextBox2.Text;
+
+
+            bd.openConnection();
+
+            if (command.ExecuteNonQuery() == 1)
+            {
+                MessageBox.Show("Аккаунт был успешно зарегистрирован!");
+
+                this.Hide();
+                Профиль Профиль = new Профиль();
+                Профиль.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Аккаунт не был зарегистрирован!");
+            }
+
+            bd.closeConnection();
+            
+
+            if (pictureBox2.Visible == true)
+            {
+                pictureBox2.Visible = false;
+            }
+            else
+            {
+                pictureBox2.Visible = true;
+            }
+
+            
             
         }
 
