@@ -26,7 +26,7 @@ namespace курсач
         //Логин и пароль к данной форме Вы сможете посмотреть в БД db_test таблице t_user
 
         //Вычисление хэша строки и возрат его из метода
-        static string sha256(string randomString)
+         string sha256(string randomString)
         {
             //Тут происходит криптографическая магия. Смысл данного метода заключается в том, что строка залетает в метод
             var crypt = new System.Security.Cryptography.SHA256Managed();
@@ -42,41 +42,9 @@ namespace курсач
         private void guna2GradientButton1_Click(object sender, EventArgs e)
         {
             //Запрос в БД на предмет того, если ли строка с подходящим логином и паролем
-            string sql = "SELECT * FROM users WHERE login = @un and  pass= @up";
-            //Открытие соединения
-            conn.Open();
-            //Объявляем таблицу
-            DataTable table = new DataTable();
-            //Объявляем адаптер
-            MySqlDataAdapter adapter = new MySqlDataAdapter();
-            //Объявляем команду
-            MySqlCommand command = new MySqlCommand(sql, conn);
-            //Определяем параметры
-            command.Parameters.Add("@un", MySqlDbType.VarChar, 25);
-            command.Parameters.Add("@up", MySqlDbType.VarChar, 25);
-            //Присваиваем параметрам значение
-            command.Parameters["@un"].Value = guna2TextBox1.Text;
-            command.Parameters["@up"].Value = sha256(guna2TextBox2.Text);
-            //Заносим команду в адаптер
-            adapter.SelectCommand = command;
-            //Заполняем таблицу
-            adapter.Fill(table);
-            //Закрываем соединение
-            conn.Close();
-            //Если вернулась больше 0 строк, значит такой пользователь существует
-            if (table.Rows.Count > 0)
-            {
-                MessageBox.Show("Вы успешно авторизовались!");
-
-
-                //Закрываем форму
-                this.Close();
-            }
-            else
-            {
-                //Отобразить сообщение о том, что авторизаия неуспешна
-                MessageBox.Show("Неверные данные авторизации!");
-            }
+            Просмотр_мотоциклов Просмотр_мотоциклов = new Просмотр_мотоциклов();
+            Просмотр_мотоциклов.ShowDialog();
+            
         }
 
         private void guna2GradientButton2_Click(object sender, EventArgs e)
@@ -84,6 +52,7 @@ namespace курсач
              this.Hide();
             menu menu = new menu(); //Открытие окна меню при нажатии на кнопку "Назад"
             menu.ShowDialog();
+           
         }
 
         private void guna2TextBox2_TextChanged(object sender, EventArgs e)

@@ -49,10 +49,11 @@ namespace курсач
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 12);
+            this.dataGridView1.Location = new System.Drawing.Point(28, 26);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(358, 301);
             this.dataGridView1.TabIndex = 4;
+            
             // 
             // Просмотр_мотоциклов
             // 
