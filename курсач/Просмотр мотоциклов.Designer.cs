@@ -29,92 +29,222 @@ namespace курсач
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Просмотр_мотоциклов));
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.toolStripSplitButton1 = new System.Windows.Forms.ToolStripSplitButton();
-            this.kAWASAKIToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.bMWToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.toolStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.motoBase1 = new курсач.User_Controls.MotoBase();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.MenuButton7 = new Guna.UI2.WinForms.Guna2Button();
+            this.MenuButton6 = new Guna.UI2.WinForms.Guna2Button();
+            this.MenuButton5 = new Guna.UI2.WinForms.Guna2Button();
+            this.MenuButton4 = new Guna.UI2.WinForms.Guna2Button();
+            this.MenuButton3 = new Guna.UI2.WinForms.Guna2Button();
+            this.MenuButton2 = new Guna.UI2.WinForms.Guna2Button();
+            this.MenuButton1 = new Guna.UI2.WinForms.Guna2Button();
+            this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // panel1
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(56, 26);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(230, 237);
-            this.dataGridView1.TabIndex = 4;
+            this.panel1.Controls.Add(this.motoBase1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel1.Location = new System.Drawing.Point(160, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(640, 450);
+            this.panel1.TabIndex = 10;
             // 
-            // toolStrip1
+            // panel2
             // 
-            this.toolStrip1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripSplitButton1});
-            this.toolStrip1.Location = new System.Drawing.Point(0, 0);
-            this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(125, 450);
-            this.toolStrip1.TabIndex = 6;
-            this.toolStrip1.Text = "toolStrip1";
+            this.panel2.Controls.Add(this.MenuButton7);
+            this.panel2.Controls.Add(this.MenuButton6);
+            this.panel2.Controls.Add(this.MenuButton5);
+            this.panel2.Controls.Add(this.MenuButton4);
+            this.panel2.Controls.Add(this.MenuButton3);
+            this.panel2.Controls.Add(this.MenuButton2);
+            this.panel2.Controls.Add(this.MenuButton1);
+            this.panel2.Controls.Add(this.panel3);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(160, 450);
+            this.panel2.TabIndex = 11;
             // 
-            // toolStripSplitButton1
+            // motoBase1
             // 
-            this.toolStripSplitButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.toolStripSplitButton1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.kAWASAKIToolStripMenuItem,
-            this.bMWToolStripMenuItem});
-            this.toolStripSplitButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripSplitButton1.Image")));
-            this.toolStripSplitButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripSplitButton1.Name = "toolStripSplitButton1";
-            this.toolStripSplitButton1.Size = new System.Drawing.Size(122, 19);
-            this.toolStripSplitButton1.Text = "Выбор мотоцикла";
-            this.toolStripSplitButton1.ButtonClick += new System.EventHandler(this.toolStripSplitButton1_ButtonClick);
+            this.motoBase1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.motoBase1.Location = new System.Drawing.Point(0, 0);
+            this.motoBase1.Name = "motoBase1";
+            this.motoBase1.Size = new System.Drawing.Size(640, 450);
+            this.motoBase1.TabIndex = 0;
             // 
-            // kAWASAKIToolStripMenuItem
+            // panel3
             // 
-            this.kAWASAKIToolStripMenuItem.Name = "kAWASAKIToolStripMenuItem";
-            this.kAWASAKIToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.kAWASAKIToolStripMenuItem.Text = "KAWASAKI";
-            this.kAWASAKIToolStripMenuItem.Click += new System.EventHandler(this.kAWASAKIToolStripMenuItem_Click);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel3.Location = new System.Drawing.Point(0, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(160, 94);
+            this.panel3.TabIndex = 1;
             // 
-            // bMWToolStripMenuItem
+            // MenuButton7
             // 
-            this.bMWToolStripMenuItem.Name = "bMWToolStripMenuItem";
-            this.bMWToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.bMWToolStripMenuItem.Text = "BMW";
+            this.MenuButton7.Animated = true;
+            this.MenuButton7.BorderColor = System.Drawing.Color.Gold;
+            this.MenuButton7.BorderThickness = 1;
+            this.MenuButton7.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.MenuButton7.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.MenuButton7.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.MenuButton7.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.MenuButton7.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.MenuButton7.Dock = System.Windows.Forms.DockStyle.Top;
+            this.MenuButton7.FillColor = System.Drawing.Color.DarkOrange;
+            this.MenuButton7.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
+            this.MenuButton7.ForeColor = System.Drawing.Color.LightCyan;
+            this.MenuButton7.ImageOffset = new System.Drawing.Point(0, -10);
+            this.MenuButton7.ImageSize = new System.Drawing.Size(50, 50);
+            this.MenuButton7.IndicateFocus = true;
+            this.MenuButton7.Location = new System.Drawing.Point(0, 364);
+            this.MenuButton7.Name = "MenuButton7";
+            this.MenuButton7.Size = new System.Drawing.Size(160, 45);
+            this.MenuButton7.TabIndex = 7;
+            this.MenuButton7.Text = "Выход";
             // 
-            // pictureBox1
+            // MenuButton6
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.White;
-            this.pictureBox1.Location = new System.Drawing.Point(128, 26);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(294, 305);
-            this.pictureBox1.TabIndex = 8;
-            this.pictureBox1.TabStop = false;
+            this.MenuButton6.Animated = true;
+            this.MenuButton6.BorderColor = System.Drawing.Color.Gold;
+            this.MenuButton6.BorderThickness = 1;
+            this.MenuButton6.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.MenuButton6.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.MenuButton6.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.MenuButton6.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.MenuButton6.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.MenuButton6.Dock = System.Windows.Forms.DockStyle.Top;
+            this.MenuButton6.FillColor = System.Drawing.Color.DarkOrange;
+            this.MenuButton6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
+            this.MenuButton6.ForeColor = System.Drawing.Color.LightCyan;
+            this.MenuButton6.ImageOffset = new System.Drawing.Point(0, -10);
+            this.MenuButton6.ImageSize = new System.Drawing.Size(50, 50);
+            this.MenuButton6.IndicateFocus = true;
+            this.MenuButton6.Location = new System.Drawing.Point(0, 319);
+            this.MenuButton6.Name = "MenuButton6";
+            this.MenuButton6.Size = new System.Drawing.Size(160, 45);
+            this.MenuButton6.TabIndex = 6;
+            this.MenuButton6.Text = "МотоБаза";
             // 
-            // guna2TextBox1
+            // MenuButton5
             // 
-            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox1.DefaultText = "";
-            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Location = new System.Drawing.Point(419, 226);
-            this.guna2TextBox1.Name = "guna2TextBox1";
-            this.guna2TextBox1.PasswordChar = '\0';
-            this.guna2TextBox1.PlaceholderText = "";
-            this.guna2TextBox1.ReadOnly = true;
-            this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.Size = new System.Drawing.Size(225, 105);
-            this.guna2TextBox1.TabIndex = 9;
+            this.MenuButton5.Animated = true;
+            this.MenuButton5.BorderColor = System.Drawing.Color.Gold;
+            this.MenuButton5.BorderThickness = 1;
+            this.MenuButton5.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.MenuButton5.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.MenuButton5.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.MenuButton5.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.MenuButton5.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.MenuButton5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.MenuButton5.FillColor = System.Drawing.Color.DarkOrange;
+            this.MenuButton5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
+            this.MenuButton5.ForeColor = System.Drawing.Color.LightCyan;
+            this.MenuButton5.ImageOffset = new System.Drawing.Point(0, -10);
+            this.MenuButton5.ImageSize = new System.Drawing.Size(50, 50);
+            this.MenuButton5.IndicateFocus = true;
+            this.MenuButton5.Location = new System.Drawing.Point(0, 274);
+            this.MenuButton5.Name = "MenuButton5";
+            this.MenuButton5.Size = new System.Drawing.Size(160, 45);
+            this.MenuButton5.TabIndex = 5;
+            this.MenuButton5.Text = "МотоБаза";
+            // 
+            // MenuButton4
+            // 
+            this.MenuButton4.Animated = true;
+            this.MenuButton4.BorderColor = System.Drawing.Color.Gold;
+            this.MenuButton4.BorderThickness = 1;
+            this.MenuButton4.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.MenuButton4.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.MenuButton4.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.MenuButton4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.MenuButton4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.MenuButton4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.MenuButton4.FillColor = System.Drawing.Color.DarkOrange;
+            this.MenuButton4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
+            this.MenuButton4.ForeColor = System.Drawing.Color.LightCyan;
+            this.MenuButton4.ImageOffset = new System.Drawing.Point(0, -10);
+            this.MenuButton4.ImageSize = new System.Drawing.Size(50, 50);
+            this.MenuButton4.IndicateFocus = true;
+            this.MenuButton4.Location = new System.Drawing.Point(0, 229);
+            this.MenuButton4.Name = "MenuButton4";
+            this.MenuButton4.Size = new System.Drawing.Size(160, 45);
+            this.MenuButton4.TabIndex = 4;
+            this.MenuButton4.Text = "История";
+            // 
+            // MenuButton3
+            // 
+            this.MenuButton3.Animated = true;
+            this.MenuButton3.BorderColor = System.Drawing.Color.Gold;
+            this.MenuButton3.BorderThickness = 1;
+            this.MenuButton3.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.MenuButton3.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.MenuButton3.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.MenuButton3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.MenuButton3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.MenuButton3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.MenuButton3.FillColor = System.Drawing.Color.DarkOrange;
+            this.MenuButton3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
+            this.MenuButton3.ForeColor = System.Drawing.Color.LightCyan;
+            this.MenuButton3.ImageOffset = new System.Drawing.Point(0, -2);
+            this.MenuButton3.ImageSize = new System.Drawing.Size(50, 50);
+            this.MenuButton3.IndicateFocus = true;
+            this.MenuButton3.Location = new System.Drawing.Point(0, 184);
+            this.MenuButton3.Name = "MenuButton3";
+            this.MenuButton3.Size = new System.Drawing.Size(160, 45);
+            this.MenuButton3.TabIndex = 3;
+            this.MenuButton3.Text = "Персонал";
+            // 
+            // MenuButton2
+            // 
+            this.MenuButton2.Animated = true;
+            this.MenuButton2.BorderColor = System.Drawing.Color.Gold;
+            this.MenuButton2.BorderThickness = 1;
+            this.MenuButton2.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.MenuButton2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.MenuButton2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.MenuButton2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.MenuButton2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.MenuButton2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.MenuButton2.FillColor = System.Drawing.Color.DarkOrange;
+            this.MenuButton2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
+            this.MenuButton2.ForeColor = System.Drawing.Color.LightCyan;
+            this.MenuButton2.ImageOffset = new System.Drawing.Point(0, -3);
+            this.MenuButton2.ImageSize = new System.Drawing.Size(50, 50);
+            this.MenuButton2.IndicateFocus = true;
+            this.MenuButton2.Location = new System.Drawing.Point(0, 139);
+            this.MenuButton2.Name = "MenuButton2";
+            this.MenuButton2.Size = new System.Drawing.Size(160, 45);
+            this.MenuButton2.TabIndex = 2;
+            this.MenuButton2.Text = "Клиенты";
+            // 
+            // MenuButton1
+            // 
+            this.MenuButton1.Animated = true;
+            this.MenuButton1.BorderColor = System.Drawing.Color.Gold;
+            this.MenuButton1.BorderThickness = 1;
+            this.MenuButton1.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.MenuButton1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.MenuButton1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.MenuButton1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.MenuButton1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.MenuButton1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.MenuButton1.FillColor = System.Drawing.Color.DarkOrange;
+            this.MenuButton1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
+            this.MenuButton1.ForeColor = System.Drawing.Color.LightCyan;
+            this.MenuButton1.ImageOffset = new System.Drawing.Point(0, -10);
+            this.MenuButton1.ImageSize = new System.Drawing.Size(50, 50);
+            this.MenuButton1.IndicateFocus = true;
+            this.MenuButton1.Location = new System.Drawing.Point(0, 94);
+            this.MenuButton1.Name = "MenuButton1";
+            this.MenuButton1.Size = new System.Drawing.Size(160, 45);
+            this.MenuButton1.TabIndex = 0;
+            this.MenuButton1.Text = "МотоБаза";
             // 
             // Просмотр_мотоциклов
             // 
@@ -123,30 +253,28 @@ namespace курсач
             this.BackColor = System.Drawing.Color.Gray;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.guna2TextBox1);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.toolStrip1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panel2);
             this.Name = "Просмотр_мотоциклов";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Просмотр_мотоциклов";
-            this.Load += new System.EventHandler(this.Просмотр_мотоциклов_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.toolStrip1.ResumeLayout(false);
-            this.toolStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.ToolStrip toolStrip1;
-        private System.Windows.Forms.ToolStripSplitButton toolStripSplitButton1;
-        private System.Windows.Forms.ToolStripMenuItem kAWASAKIToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem bMWToolStripMenuItem;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
+        private User_Controls.MotoBase motoBase1;
+        private Guna.UI2.WinForms.Guna2Button MenuButton1;
+        private System.Windows.Forms.Panel panel3;
+        private Guna.UI2.WinForms.Guna2Button MenuButton7;
+        private Guna.UI2.WinForms.Guna2Button MenuButton6;
+        private Guna.UI2.WinForms.Guna2Button MenuButton5;
+        private Guna.UI2.WinForms.Guna2Button MenuButton4;
+        private Guna.UI2.WinForms.Guna2Button MenuButton3;
+        private Guna.UI2.WinForms.Guna2Button MenuButton2;
     }
 }

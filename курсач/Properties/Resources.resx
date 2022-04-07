@@ -118,67 +118,91 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="11661472_lens-flare-flare-transparent-solar-transparent-png" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\11661472_lens-flare-flare-transparent-solar-transparent-png.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="fonstola.ru_353687_1920x1200" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fonstola.ru_353687_1920x1200.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="png-transparent-orange-light-art-illustration-light-triangle-symmetry-pattern-golden-light-effect-angle-golden-frame-effect" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\png-transparent-orange-light-art-illustration-light-triangle-symmetry-pattern-golden-light-effect-angle-golden-frame-effect.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="kawasaki_ninja_250r_2009_1280x800_red" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\kawasaki_ninja_250r_2009_1280x800_red.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="minimalizm-motocikl-moto-fon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\minimalizm-motocikl-moto-fon.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="qF5VIoYx" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\qF5VIoYx.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="skull-scooter-minimalism-minimalist" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\skull-scooter-minimalism-minimalist.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="free-png.ru-78" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\free-png.ru-78.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Kawasaki_Ninja_Fi_ABS_-_Candy_Burn_Orange.4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Kawasaki_Ninja_Fi_ABS_-_Candy_Burn_Orange.4.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="2018-kawasaki-zx10r-4k-t8" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\2018-kawasaki-zx10r-4k-t8.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="0Y1CzJ4siug" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\0Y1CzJ4siug.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="download (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\download (1).gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="download (3)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\download (3)1.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="download" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\download.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="8NOhnHnAbCs" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\8NOhnHnAbCs.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="2-25443_light" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\2-25443_light.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="anime-girl-kawasaki-h2r-4k-kh-1360x768" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\anime-girl-kawasaki-h2r-4k-kh-1360x768.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="MotoBase" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pictures\MenuIcons\MotoBase.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="52CiueHcMrE" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\52CiueHcMrE.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="download (3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\download (3).gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="minimalizm-motocikl-moto-fon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\minimalizm-motocikl-moto-fon.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="History" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pictures\MenuIcons\History.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="download (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\download (2).gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="anime-girl-kawasaki-h2r-4k-kh-1360x768" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\anime-girl-kawasaki-h2r-4k-kh-1360x768.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="11661472_lens-flare-flare-transparent-solar-transparent-png" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\11661472_lens-flare-flare-transparent-solar-transparent-png.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="2-25443_light" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\2-25443_light.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fonstola.ru_353687_1920x1200" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fonstola.ru_353687_1920x1200.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="download (3)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\download (3)1.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="free-png.ru-78" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\free-png.ru-78.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="png-transparent-orange-light-art-illustration-light-triangle-symmetry-pattern-golden-light-effect-angle-golden-frame-effect" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\png-transparent-orange-light-art-illustration-light-triangle-symmetry-pattern-golden-light-effect-angle-golden-frame-effect.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="skull-scooter-minimalism-minimalist" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\skull-scooter-minimalism-minimalist.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="0Y1CzJ4siug" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\0Y1CzJ4siug.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="2018-kawasaki-zx10r-4k-t8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\2018-kawasaki-zx10r-4k-t8.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="download (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\download (1).gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="download" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\download.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="free-png1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\free-png.ru-781.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="8NOhnHnAbCs" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\8NOhnHnAbCs.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MotoBase1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pictures\MenuIcons\MotoBase.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-групповой-звонок-96" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-групповой-звонок-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="download (3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\download (3).gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Clients" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pictures\MenuIcons\Clients.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="qF5VIoYx" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\qF5VIoYx.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-значок-96" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-значок-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Kawasaki_Ninja_Fi_ABS_-_Candy_Burn_Orange.4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Kawasaki_Ninja_Fi_ABS_-_Candy_Burn_Orange.4.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Staff" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pictures\MenuIcons\Staff.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="kawasaki_ninja_250r_2009_1280x800_red" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\kawasaki_ninja_250r_2009_1280x800_red.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Exit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pictures\MenuIcons\Exit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
