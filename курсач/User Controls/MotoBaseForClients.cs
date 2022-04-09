@@ -95,8 +95,8 @@ namespace курсач.User_Controls
             row.Cells.AddRange(cel0);
             this.dataGridView1.Rows.Add(row);
             //msgbox с получением инфы
-            if (MessageBox.Show("Вы сотрудник?", "Вопрос", MessageBoxButtons.YesNo) == DialogResult.Yes) Info.Employee = true;
-            else Info.Employee = false;
+            
+           
         }
     }
 }

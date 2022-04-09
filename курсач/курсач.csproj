@@ -93,6 +93,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BD.cs" />
+    <Compile Include="Classes\Auth.cs" />
+    <Compile Include="Classes\ConnLine.cs" />
+    <Compile Include="Classes\DBConn.cs" />
+    <Compile Include="Classes\Encryption.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
@@ -174,46 +178,20 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\download %282%291.gif" />
-    <None Include="Resources\download %283%292.gif" />
-    <Content Include="Resources\Pictures\0Y1CzJ4siug.jpg" />
-    <Content Include="Resources\Pictures\11661472_lens-flare-flare-transparent-solar-transparent-png.png" />
-    <Content Include="Resources\Pictures\2-25443_light.png" />
-    <Content Include="Resources\Pictures\2018-kawasaki-zx10r-4k-t8.jpg" />
-    <Content Include="Resources\Pictures\52CiueHcMrE.jpg" />
-    <Content Include="Resources\Pictures\8NOhnHnAbCs.jpg" />
-    <Content Include="Resources\Pictures\anime-girl-kawasaki-h2r-4k-kh-1360x768.jpg" />
-    <Content Include="Resources\Pictures\download %281%29.gif" />
-    <Content Include="Resources\Pictures\download %281%291.gif" />
-    <Content Include="Resources\Pictures\download %282%29.gif" />
-    <Content Include="Resources\Pictures\download %283%29.gif" />
-    <Content Include="Resources\Pictures\download %283%291.gif" />
-    <Content Include="Resources\Pictures\download.gif" />
-    <Content Include="Resources\Pictures\download1.gif" />
-    <Content Include="Resources\Pictures\fonstola.ru_353687_1920x1200.jpg" />
-    <Content Include="Resources\Pictures\free-png.ru-78.png" />
-    <Content Include="Resources\Pictures\free-png.ru-781.png" />
-    <Content Include="Resources\Pictures\icons8-групповой-звонок-96.png" />
-    <Content Include="Resources\Pictures\minimalizm-motocikl-moto-fon.jpg" />
-    <Content Include="Resources\Pictures\png-transparent-orange-light-art-illustration-light-triangle-symmetry-pattern-golden-light-effect-angle-golden-frame-effect.png" />
-    <Content Include="Resources\Pictures\qF5VIoYx.jpg" />
-    <Content Include="Resources\Pictures\skull-scooter-minimalism-minimalist.jpeg" />
-    <None Include="Resources\download %281%291.gif" />
+    <None Include="Resources\icons8-удалить-навсегда-100.png" />
     <Content Include="Resources\Pictures\EditRows\icons8-андроид-96.png" />
     <Content Include="Resources\Pictures\EditRows\Phone.png" />
     <Content Include="Resources\Pictures\EditRows\Login.png" />
     <Content Include="Resources\Pictures\EditRows\Password.png" />
     <Content Include="Resources\Pictures\EditRows\Search.png" />
-    <Content Include="Resources\Pictures\icons8-значок-96.png" />
-    <Content Include="Resources\Pictures\kawasaki_ninja_250r_2009_1280x800_red.jpg" />
-    <Content Include="Resources\Pictures\Kawasaki_Ninja_Fi_ABS_-_Candy_Burn_Orange.4.jpg" />
     <Content Include="Resources\Pictures\MenuIcons\Exit.png" />
     <Content Include="Resources\Pictures\MenuIcons\Clients.png" />
     <Content Include="Resources\Pictures\MenuIcons\History.png" />
+    <Content Include="Resources\Pictures\MenuIcons\Delete.png" />
+    <Content Include="Resources\Pictures\MenuIcons\Add.png" />
+    <Content Include="Resources\Pictures\MenuIcons\Pencil.png" />
     <Content Include="Resources\Pictures\MenuIcons\Staff.png" />
     <Content Include="Resources\Pictures\MenuIcons\MotoBase.png" />
-    <None Include="Resources\icons8-значок-96.png" />
-    <None Include="Resources\icons8-групповой-звонок-96.png" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

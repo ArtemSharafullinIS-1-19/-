@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
@@ -26,48 +27,50 @@ namespace курсач
             
 
             //Переменные для textBox.Text
-            guna2TextBox1.Text = "";
-            guna2TextBox2.Text = "";
-            guna2TextBox3.Text = "";
+            nameBox.Text = "";
+            logonBox.Text = "";
+            passwordText.Text = "";
 
             
 
         }
-
+        bool IsValid(string line, string request)
+        {
+            return new Regex(@request).IsMatch(line);
+        }
         private void guna2GradientButton1_Click(object sender, EventArgs e)
         {
-            
-
-            BD bd = new BD();
-            MySqlCommand command = new MySqlCommand("INSERT INTO `users` (FIO, pass, phone, login) VALUES(@FIO, @pass, @phone, @login", bd.getConnection());
-
-            command.Parameters.Add("@FIO", MySqlDbType.VarChar).Value = guna2TextBox1.Text;
-            command.Parameters.Add("@pass", MySqlDbType.VarChar).Value = guna2TextBox3.Text;
-            command.Parameters.Add("@phone", MySqlDbType.VarChar).Value = guna2TextBox4.Text;
-            command.Parameters.Add("@login", MySqlDbType.VarChar).Value = guna2TextBox2.Text;
-
-
-            bd.openConnection();
-
-            if (command.ExecuteNonQuery() == 1)
+            if ((IsValid(emailText.Text, @"^[\w\.\-]+@[\w\-]+\.[a-z]+$") && IsValid(phoneBox.Text, @"^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$")))
             {
-                MessageBox.Show("Аккаунт был успешно зарегистрирован!");
+                //Формируем строку запроса на удаление строк
+                string sql_new = ($"INSERT INTO clients (name, number, email, login, password) " +
+                                                 $"VALUES ('{nameBox.Text}','{phoneBox.Text}','{emailText.Text}',@un,@up)");
+                //Посылаем запрос на обновление данных
+                MySqlCommand newrec = new MySqlCommand(sql_new, Classes.DBConn.conn);
+                Classes.DBConn.conn.Open();
+                newrec.Parameters.Add("@un", MySqlDbType.VarChar, 25);
+                newrec.Parameters.Add("@up", MySqlDbType.VarChar, 25);
+                //Присваиваем параметрам значение
+                newrec.Parameters["@un"].Value = logonBox.Text;
+                newrec.Parameters["@up"].Value = Classes.Encryption.Sha256(passwordText.Text);
+                newrec.ExecuteNonQuery();
+                Classes.DBConn.conn.Close();
 
+                MessageBox.Show("Вы успешно зарегистрировались!");
+               
                 this.Hide();
-                Профиль Профиль = new Профиль();
-                Профиль.ShowDialog();
-            }
+                Авторизация Авторизация = new Авторизация();
+                Авторизация.ShowDialog();
+            }// вставь класс IsValid с Некита
             else
             {
-                MessageBox.Show("Аккаунт не был зарегистрирован!");
+                MessageBox.Show("Введите корректные данные телефона или почты");
             }
 
-            bd.closeConnection();
-            
 
 
-            
-            
+
+
         }
 
         private void guna2GradientButton2_Click(object sender, EventArgs e)
