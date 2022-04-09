@@ -104,6 +104,7 @@ namespace курсач
             this.MenuButton7.TabIndex = 7;
             this.MenuButton7.Text = "Выход";
             this.MenuButton7.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.MenuButton7.Click += new System.EventHandler(this.MenuButton7_Click);
             // 
             // MenuButton6
             // 

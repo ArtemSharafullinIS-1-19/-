@@ -28,6 +28,19 @@ namespace курсач
         {
 
         }
+
+        private void MenuButton7_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Вы вышли из аккаунта");
+            
+            this.Hide();
+            Авторизация Авторизация = new Авторизация();
+            Авторизация.ShowDialog();
+            
+            Environment.Exit(0);
+
+
+        }
     }
 
       

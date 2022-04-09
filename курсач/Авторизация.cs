@@ -91,13 +91,18 @@ namespace курсач
             adapter.SelectCommand = command;
             //Заполняем таблицу
             adapter.Fill(table);
+
+            var reader = command.ExecuteReader();
+            if (reader.Read()) //Если удалось прочитать первую строку из результата (читай: если есть 1ая строка)
+            {
+                MessageBox.Show(string.Format("Вы вошли как {0}", reader["login"]));
+            }
+
             //Закрываем соединение
             Classes.DBConn.conn.Close();
             //Если вернулась больше 0 строк, значит такой пользователь существует
             if (table.Rows.Count > 0)
             {
-                MessageBox.Show("Вы успешно авторизовались!");
-
                 //Присваеваем глобальный признак авторизации
                 Classes.Auth.auth = true;
                 //Достаем данные пользователя в случае успеха
