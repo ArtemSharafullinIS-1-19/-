@@ -162,7 +162,7 @@ namespace курсач
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.Image = global::курсач.Properties.Resources._2_25443_light;
+            
             this.pictureBox2.Location = new System.Drawing.Point(444, 91);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(236, 139);
@@ -175,7 +175,7 @@ namespace курсач
             // 
             this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.guna2PictureBox1.FillColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox1.Image = global::курсач.Properties.Resources.download__3_1;
+           
             this.guna2PictureBox1.ImageRotate = 0F;
             this.guna2PictureBox1.Location = new System.Drawing.Point(244, -3);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
@@ -236,7 +236,7 @@ namespace курсач
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.BackgroundImage = global::курсач.Properties.Resources.kawasaki_ninja_250r_2009_1280x800_red;
+            
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(737, 423);
             this.Controls.Add(this.guna2GradientButton3);

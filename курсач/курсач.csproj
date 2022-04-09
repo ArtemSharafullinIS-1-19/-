@@ -93,19 +93,24 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BD.cs" />
-    <Compile Include="menu.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="menu.Designer.cs">
-      <DependentUpon>menu.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="User Controls\MotoBase.cs">
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\MotoBaseForClients.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="User Controls\MotoBase.Designer.cs">
-      <DependentUpon>MotoBase.cs</DependentUpon>
+    <Compile Include="User Controls\MotoBaseForClients.Designer.cs">
+      <DependentUpon>MotoBaseForClients.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\MotoBaseForStaff.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\MotoBaseForStaff.Designer.cs">
+      <DependentUpon>MotoBaseForStaff.cs</DependentUpon>
     </Compile>
     <Compile Include="Авторизация.cs">
       <SubType>Form</SubType>
@@ -113,23 +118,11 @@
     <Compile Include="Авторизация.Designer.cs">
       <DependentUpon>Авторизация.cs</DependentUpon>
     </Compile>
-    <Compile Include="Главное меню.cs">
+    <Compile Include="MainMenu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Главное меню.Designer.cs">
-      <DependentUpon>Главное меню.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Оформление проката.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Оформление проката.Designer.cs">
-      <DependentUpon>Оформление проката.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Просмотр мотоциклов.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Просмотр мотоциклов.Designer.cs">
-      <DependentUpon>Просмотр мотоциклов.cs</DependentUpon>
+    <Compile Include="MainMenu.Designer.cs">
+      <DependentUpon>MainMenu.cs</DependentUpon>
     </Compile>
     <Compile Include="Профиль.cs">
       <SubType>Form</SubType>
@@ -143,33 +136,22 @@
     <Compile Include="Регистрация.Designer.cs">
       <DependentUpon>Регистрация.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="menu.resx">
-      <DependentUpon>menu.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
-    <EmbeddedResource Include="User Controls\MotoBase.resx">
-      <DependentUpon>MotoBase.cs</DependentUpon>
+    <EmbeddedResource Include="User Controls\MotoBaseForClients.resx">
+      <DependentUpon>MotoBaseForClients.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\MotoBaseForStaff.resx">
+      <DependentUpon>MotoBaseForStaff.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Авторизация.resx">
       <DependentUpon>Авторизация.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Главное меню.resx">
-      <DependentUpon>Главное меню.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Оформление проката.resx">
-      <DependentUpon>Оформление проката.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Просмотр мотоциклов.resx">
-      <DependentUpon>Просмотр мотоциклов.cs</DependentUpon>
+    <EmbeddedResource Include="MainMenu.resx">
+      <DependentUpon>MainMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Профиль.resx">
       <DependentUpon>Профиль.cs</DependentUpon>
@@ -192,69 +174,39 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\anime-girl-kawasaki-h2r-4k-kh-1360x768.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\fonstola.ru_353687_1920x1200.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\qF5VIoYx.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Kawasaki_Ninja_Fi_ABS_-_Candy_Burn_Orange.4.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\2018-kawasaki-zx10r-4k-t8.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\minimalizm-motocikl-moto-fon.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\8NOhnHnAbCs.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\52CiueHcMrE.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\0Y1CzJ4siug.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\skull-scooter-minimalism-minimalist.jpeg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\kawasaki_ninja_250r_2009_1280x800_red.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\download.gif" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\download %281%29.gif" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\download %282%29.gif" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\download %283%29.gif" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\download %283%291.gif" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\11661472_lens-flare-flare-transparent-solar-transparent-png.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\png-transparent-orange-light-art-illustration-light-triangle-symmetry-pattern-golden-light-effect-angle-golden-frame-effect.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\2-25443_light.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\free-png.ru-78.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\free-png.ru-781.png" />
-  </ItemGroup>
-  <ItemGroup>
+    <None Include="Resources\download %282%291.gif" />
+    <None Include="Resources\download %283%292.gif" />
+    <Content Include="Resources\Pictures\0Y1CzJ4siug.jpg" />
+    <Content Include="Resources\Pictures\11661472_lens-flare-flare-transparent-solar-transparent-png.png" />
+    <Content Include="Resources\Pictures\2-25443_light.png" />
+    <Content Include="Resources\Pictures\2018-kawasaki-zx10r-4k-t8.jpg" />
+    <Content Include="Resources\Pictures\52CiueHcMrE.jpg" />
+    <Content Include="Resources\Pictures\8NOhnHnAbCs.jpg" />
+    <Content Include="Resources\Pictures\anime-girl-kawasaki-h2r-4k-kh-1360x768.jpg" />
+    <Content Include="Resources\Pictures\download %281%29.gif" />
+    <Content Include="Resources\Pictures\download %281%291.gif" />
+    <Content Include="Resources\Pictures\download %282%29.gif" />
+    <Content Include="Resources\Pictures\download %283%29.gif" />
+    <Content Include="Resources\Pictures\download %283%291.gif" />
+    <Content Include="Resources\Pictures\download.gif" />
+    <Content Include="Resources\Pictures\download1.gif" />
+    <Content Include="Resources\Pictures\fonstola.ru_353687_1920x1200.jpg" />
+    <Content Include="Resources\Pictures\free-png.ru-78.png" />
+    <Content Include="Resources\Pictures\free-png.ru-781.png" />
+    <Content Include="Resources\Pictures\icons8-групповой-звонок-96.png" />
+    <Content Include="Resources\Pictures\minimalizm-motocikl-moto-fon.jpg" />
+    <Content Include="Resources\Pictures\png-transparent-orange-light-art-illustration-light-triangle-symmetry-pattern-golden-light-effect-angle-golden-frame-effect.png" />
+    <Content Include="Resources\Pictures\qF5VIoYx.jpg" />
+    <Content Include="Resources\Pictures\skull-scooter-minimalism-minimalist.jpeg" />
+    <None Include="Resources\download %281%291.gif" />
+    <Content Include="Resources\Pictures\EditRows\icons8-андроид-96.png" />
+    <Content Include="Resources\Pictures\EditRows\Phone.png" />
+    <Content Include="Resources\Pictures\EditRows\Login.png" />
+    <Content Include="Resources\Pictures\EditRows\Password.png" />
+    <Content Include="Resources\Pictures\EditRows\Search.png" />
+    <Content Include="Resources\Pictures\icons8-значок-96.png" />
+    <Content Include="Resources\Pictures\kawasaki_ninja_250r_2009_1280x800_red.jpg" />
+    <Content Include="Resources\Pictures\Kawasaki_Ninja_Fi_ABS_-_Candy_Burn_Orange.4.jpg" />
     <Content Include="Resources\Pictures\MenuIcons\Exit.png" />
     <Content Include="Resources\Pictures\MenuIcons\Clients.png" />
     <Content Include="Resources\Pictures\MenuIcons\History.png" />
@@ -263,5 +215,6 @@
     <None Include="Resources\icons8-значок-96.png" />
     <None Include="Resources\icons8-групповой-звонок-96.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

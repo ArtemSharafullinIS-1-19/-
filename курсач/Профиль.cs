@@ -26,9 +26,6 @@ namespace курсач
 
         private void guna2GradientButton1_Click(object sender, EventArgs e)
         {
-            Hide();
-            Главноеменю Главноеменю = new Главноеменю();
-            Главноеменю.ShowDialog();
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
@@ -46,8 +43,6 @@ namespace курсач
         {
             MessageBox.Show("Вы уверены, что хотите выйти из аккаунта?", "Выйти из аккаунта?", MessageBoxButtons.YesNo);
             Hide();
-            menu menu = new menu();
-            menu.ShowDialog();
         }
     }
 }

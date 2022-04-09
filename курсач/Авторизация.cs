@@ -49,9 +49,7 @@ namespace курсач
 
         private void guna2GradientButton2_Click(object sender, EventArgs e)
         {
-             this.Hide();
-            menu menu = new menu(); //Открытие окна меню при нажатии на кнопку "Назад"
-            menu.ShowDialog();
+           
            
         }
 
@@ -69,8 +67,30 @@ namespace курсач
             t.SetToolTip(guna2GradientButton1, "Нажмите, чтоб войти");
 
             ToolTip t2 = new ToolTip();
-            t2.SetToolTip(guna2GradientButton2, "Нажмите, чтоб выйти в меню");
+            t2.SetToolTip(linkLabel1, "Нажмите, чтоб зарегистрироваться");
 
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void linkLabel1_MouseClick(object sender, MouseEventArgs e)
+        {
+            this.Hide();
+            Регистрация Регистрация = new Регистрация();
+            Регистрация.ShowDialog();
         }
     }
 }

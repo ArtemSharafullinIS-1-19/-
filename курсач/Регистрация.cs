@@ -36,58 +36,7 @@ namespace курсач
 
         private void guna2GradientButton1_Click(object sender, EventArgs e)
         {
-            if (guna2TextBox1.Text != "")
-            {
-                label1.Font = new Font("Times New Roman", 9F, FontStyle.Bold);
-                label1.ForeColor = Color.White;
-                //Если значение верное, то label будет обычного цвета
-            }
-            else
-            {
-                label1.Text = "Введите Имя, Фамилию, Отчёство!";
-                label1.ForeColor = Color.Red;
-                label1.Font = new Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold);
-                //Если значение не верно, то label будет красного цвета
-            }
-            if (guna2TextBox2.Text != "")
-            {
-                label2.Font = new Font("Times New Roman", 9F, FontStyle.Bold);
-                label2.ForeColor = Color.White;
-                //Если значение верное, то label будет обычного цвета
-            }
-            else
-            {
-                label2.Text = "Введите Ваш логин!";
-                label2.ForeColor = Color.Red;
-                label2.Font = new Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold);
-                //Если значение не верно, то label будет красного цвета
-            }
-            if (guna2TextBox3.Text != "")
-            {
-                label3.Font = new Font("Times New Roman", 9F, FontStyle.Bold);
-                label3.ForeColor = Color.White;
-                //Если значение верное, то label будет обычного цвета
-            }
-            else
-            {
-                label3.Text = "Введите Ваш Email!";
-                label3.ForeColor = Color.Red;
-                label3.Font = new Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold);
-                //Если значение не верно, то label будет красного цвета
-            }
-            if (guna2TextBox4.Text != "")
-            {
-                label4.Font = new Font("Times New Roman", 9F, FontStyle.Bold);
-                label4.ForeColor = Color.White;
-                //Если значение верное, то label будет обычного цвета
-            }
-            else
-            {
-                label4.Text = "Введите Ваш телефон!";
-                label4.ForeColor = Color.Red;
-                label4.Font = new Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold);
-                //Если значение не верно, то label будет красного цвета
-            }
+            
 
             BD bd = new BD();
             MySqlCommand command = new MySqlCommand("INSERT INTO `users` (FIO, pass, phone, login) VALUES(@FIO, @pass, @phone, @login", bd.getConnection());
@@ -116,14 +65,6 @@ namespace курсач
             bd.closeConnection();
             
 
-            if (pictureBox2.Visible == true)
-            {
-                pictureBox2.Visible = false;
-            }
-            else
-            {
-                pictureBox2.Visible = true;
-            }
 
             
             
@@ -131,9 +72,9 @@ namespace курсач
 
         private void guna2GradientButton2_Click(object sender, EventArgs e)
         {
-            Hide();
-            menu menu = new menu();
-            menu.ShowDialog();
+            this.Hide();
+            Авторизация Авторизация = new Авторизация();
+            Авторизация.ShowDialog();
         }
 
         private void guna2TextBox1_TextChanged(object sender, EventArgs e)
@@ -152,6 +93,9 @@ namespace курсач
            
         }
 
-      
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
