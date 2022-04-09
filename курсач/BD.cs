@@ -9,7 +9,7 @@ namespace курсач
 {
     internal class BD
     {
-        MySqlConnection connection = new MySqlConnection("server=chuc.caseum.ru;port=33333;user=st_1_29_19;database=st_1_29_19;password=85653548;");
+        MySqlConnection connection = new MySqlConnection("server=chuc.caseum.ru;port=33333;user=st_1_19_23;database=is_1_19_st23_KURS;password=45547788;");
         public void openConnection()
         {
             if (connection.State == System.Data.ConnectionState.Closed)
