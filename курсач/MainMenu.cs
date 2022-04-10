@@ -26,7 +26,15 @@ namespace курсач
 
         private void motoBase1_Load(object sender, EventArgs e)
         {
-
+            if (Classes.Auth.auth_is_admin)
+            {
+                motoBase1.Visible = false;
+            }
+            else
+            {
+                motoBaseForStaff1.Visible = false;
+                clients1.Visible = false;
+            }
         }
 
         private void MenuButton7_Click(object sender, EventArgs e)
@@ -40,6 +48,41 @@ namespace курсач
             Environment.Exit(0);
 
 
+        }
+
+        private void MenuButton3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void MenuButton2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void MenuButton4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void MenuButton1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (Classes.Auth.auth_is_admin)
+            {
+                motoBaseForStaff1.Visible = MenuButton1.Checked;
+            }
+            else
+            {
+                motoBase1.Visible = MenuButton1.Checked;
+            }
+            if (Classes.Auth.auth_is_admin)
+            {
+                clients1.Visible = MenuButton2.Checked;
+            }
+            else
+            {
+
+            }
         }
     }
 

@@ -1,6 +1,6 @@
 ﻿namespace курсач.User_Controls
 {
-    partial class MotoBaseForStaff
+    partial class Clients
     {
         /// <summary> 
         /// Обязательная переменная конструктора.
@@ -148,7 +148,7 @@
             this.TextBox.Margin = new System.Windows.Forms.Padding(0);
             this.TextBox.Name = "TextBox";
             this.TextBox.PasswordChar = '\0';
-            this.TextBox.PlaceholderText = "Поиск мото";
+            this.TextBox.PlaceholderText = "Поиск клиента";
             this.TextBox.SelectedText = "";
             this.TextBox.Size = new System.Drawing.Size(200, 39);
             this.TextBox.TabIndex = 0;
@@ -214,15 +214,15 @@
             this.DataGridView.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.DataGridView_CellMouseClick);
             this.DataGridView.CellMouseDown += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.DataGridView_CellMouseDown);
             // 
-            // MotoBaseForStaff
+            // Clients
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.DataGridView);
             this.Controls.Add(this.panel1);
-            this.Name = "MotoBaseForStaff";
+            this.Name = "Clients";
             this.Size = new System.Drawing.Size(640, 450);
-            this.Load += new System.EventHandler(this.MotoBaseForStaff_Load);
+            this.Load += new System.EventHandler(this.Clients_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.DeleteBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.AddBox)).EndInit();

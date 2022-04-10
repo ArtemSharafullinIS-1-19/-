@@ -21,26 +21,50 @@ namespace курсач
 
         public void GetUserInfo(string login)
         {
-            // устанавливаем соединение с БД
-            Classes.DBConn.conn.Open();
-            // запрос
-            var sql = $"SELECT * FROM clients WHERE login='{login}'";
-            // объект для выполнения SQL-запроса
-            var command = new MySqlCommand(sql, Classes.DBConn.conn);
-            // объект для чтения ответа сервера
-            var reader = command.ExecuteReader();
-            // читаем результат
-            while (reader.Read())
+            if (Classes.Auth.auth_is_admin)
             {
-                // элементы массива [] - это значения столбцов из запроса SELECT
-                Classes.Auth.auth_id = reader[0].ToString();
-                Classes.Auth.auth_fio = reader[2].ToString();
-                Classes.Auth.auth_doljnost = reader[3].ToString();
-                Classes.Auth.auth_email = reader[4].ToString();
+                // устанавливаем соединение с БД
+                Classes.DBConn.conn.Open();
+                // запрос
+                var sql = $"SELECT * FROM Personal WHERE login='{login}'";
+                // объект для выполнения SQL-запроса
+                var command = new MySqlCommand(sql, Classes.DBConn.conn);
+                // объект для чтения ответа сервера
+                var reader = command.ExecuteReader();
+                // читаем результат
+                while (reader.Read())
+                {
+                    // элементы массива [] - это значения столбцов из запроса SELECT
+                    Classes.Auth.auth_id = reader[0].ToString();
+                    Classes.Auth.auth_fio = reader[1].ToString();
+                    Classes.Auth.auth_doljnost = reader[2].ToString();
+                }
+                reader.Close(); // закрываем reader
+                                // закрываем соединение с БД
+                Classes.DBConn.conn.Close();
             }
-            reader.Close(); // закрываем reader
-            // закрываем соединение с БД
-            Classes.DBConn.conn.Close();
+            else
+            {
+                // устанавливаем соединение с БД
+                Classes.DBConn.conn.Open();
+                // запрос
+                var sql = $"SELECT * FROM clients WHERE login='{login}'";
+                // объект для выполнения SQL-запроса
+                var command = new MySqlCommand(sql, Classes.DBConn.conn);
+                // объект для чтения ответа сервера
+                var reader = command.ExecuteReader();
+                // читаем результат
+                while (reader.Read())
+                {
+                    // элементы массива [] - это значения столбцов из запроса SELECT
+                    Classes.Auth.auth_id = reader[0].ToString();
+                    Classes.Auth.auth_fio = reader[1].ToString();
+                    Classes.Auth.auth_email = reader[3].ToString();
+                }
+                reader.Close(); // закрываем reader
+                // закрываем соединение с БД
+                Classes.DBConn.conn.Close();
+            }
         }
 
 
@@ -72,7 +96,7 @@ namespace курсач
         private void guna2GradientButton1_Click(object sender, EventArgs e)
         {
             //Запрос в БД на предмет того, если ли строка с подходящим логином и паролем
-            var sql = "SELECT * FROM clients WHERE login = @un and  password= @up";
+            var sql = "SELECT * FROM Users WHERE login = @un and  password= @up";
             //Открытие соединения
             Classes.DBConn.conn.Open();
             //Объявляем таблицу
@@ -96,6 +120,7 @@ namespace курсач
             if (reader.Read()) //Если удалось прочитать первую строку из результата (читай: если есть 1ая строка)
             {
                 MessageBox.Show(string.Format("Вы вошли как {0}", reader["login"]));
+                Classes.Auth.auth_is_admin = reader["isstaff"].ToString() == "t" ? true : false; ;
             }
 
             //Закрываем соединение
@@ -109,6 +134,7 @@ namespace курсач
                 GetUserInfo(loginBox.Text);
                 //Вызов формы в режиме диалога
 
+                Hide();
                 Просмотр_мотоциклов Просмотр_мотоциклов = new Просмотр_мотоциклов();
                 Просмотр_мотоциклов.ShowDialog();
 

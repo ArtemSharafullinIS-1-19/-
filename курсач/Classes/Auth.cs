@@ -17,5 +17,6 @@ namespace курсач.Classes
         public static string auth_email = null;
         //Статичное поле, которое хранит количество привелегий пользователя
         public static string auth_doljnost = null;
+        public static bool auth_is_admin = false;
     }
 }

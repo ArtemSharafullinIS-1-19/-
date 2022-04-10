@@ -17,7 +17,7 @@ namespace курсач.Classes
         private static readonly MySqlDataAdapter MyDA = new MySqlDataAdapter();
         //Объявление BindingSource, основная его задача, это обеспечить унифицированный доступ к источнику данных.
         private static BindingSource bSource;
-        //Представляет одну таблицу данных в памяти.
+        //Представляет одну таблицу данных в п*амяти.
         private static DataTable table;
 
         //Метод заполнения грида

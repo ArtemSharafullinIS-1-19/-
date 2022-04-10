@@ -110,6 +110,12 @@
     <Compile Include="User Controls\MotoBaseForClients.Designer.cs">
       <DependentUpon>MotoBaseForClients.cs</DependentUpon>
     </Compile>
+    <Compile Include="User Controls\Clients.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\Clients.Designer.cs">
+      <DependentUpon>Clients.cs</DependentUpon>
+    </Compile>
     <Compile Include="User Controls\MotoBaseForStaff.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -147,6 +153,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="User Controls\MotoBaseForClients.resx">
       <DependentUpon>MotoBaseForClients.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\Clients.resx">
+      <DependentUpon>Clients.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="User Controls\MotoBaseForStaff.resx">
       <DependentUpon>MotoBaseForStaff.cs</DependentUpon>

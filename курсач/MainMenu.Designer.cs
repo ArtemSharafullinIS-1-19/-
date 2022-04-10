@@ -30,16 +30,16 @@ namespace курсач
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.motoBase1 = new курсач.User_Controls.MotoBaseForClients();
             this.panel2 = new System.Windows.Forms.Panel();
             this.MenuButton7 = new Guna.UI2.WinForms.Guna2Button();
-            this.MenuButton6 = new Guna.UI2.WinForms.Guna2Button();
-            this.MenuButton5 = new Guna.UI2.WinForms.Guna2Button();
             this.MenuButton4 = new Guna.UI2.WinForms.Guna2Button();
             this.MenuButton3 = new Guna.UI2.WinForms.Guna2Button();
             this.MenuButton2 = new Guna.UI2.WinForms.Guna2Button();
             this.MenuButton1 = new Guna.UI2.WinForms.Guna2Button();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.motoBaseForStaff1 = new курсач.User_Controls.MotoBaseForStaff();
+            this.motoBase1 = new курсач.User_Controls.MotoBaseForClients();
+            this.clients1 = new курсач.User_Controls.Clients();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -47,29 +47,18 @@ namespace курсач
             // panel1
             // 
             this.panel1.Controls.Add(this.motoBase1);
+            this.panel1.Controls.Add(this.clients1);
+            this.panel1.Controls.Add(this.motoBaseForStaff1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel1.Location = new System.Drawing.Point(160, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(640, 450);
             this.panel1.TabIndex = 10;
             // 
-            // motoBase1
-            // 
-            this.motoBase1.AutoScroll = true;
-            this.motoBase1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.motoBase1.Location = new System.Drawing.Point(0, 0);
-            this.motoBase1.Margin = new System.Windows.Forms.Padding(0);
-            this.motoBase1.Name = "motoBase1";
-            this.motoBase1.Size = new System.Drawing.Size(640, 450);
-            this.motoBase1.TabIndex = 0;
-            this.motoBase1.Load += new System.EventHandler(this.motoBase1_Load);
-            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.DarkRed;
             this.panel2.Controls.Add(this.MenuButton7);
-            this.panel2.Controls.Add(this.MenuButton6);
-            this.panel2.Controls.Add(this.MenuButton5);
             this.panel2.Controls.Add(this.MenuButton4);
             this.panel2.Controls.Add(this.MenuButton3);
             this.panel2.Controls.Add(this.MenuButton2);
@@ -98,59 +87,13 @@ namespace курсач
             this.MenuButton7.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.MenuButton7.ImageSize = new System.Drawing.Size(40, 40);
             this.MenuButton7.IndicateFocus = true;
-            this.MenuButton7.Location = new System.Drawing.Point(0, 364);
+            this.MenuButton7.Location = new System.Drawing.Point(0, 378);
             this.MenuButton7.Name = "MenuButton7";
-            this.MenuButton7.Size = new System.Drawing.Size(160, 45);
+            this.MenuButton7.Size = new System.Drawing.Size(160, 71);
             this.MenuButton7.TabIndex = 7;
             this.MenuButton7.Text = "Выход";
             this.MenuButton7.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.MenuButton7.Click += new System.EventHandler(this.MenuButton7_Click);
-            // 
-            // MenuButton6
-            // 
-            this.MenuButton6.Animated = true;
-            this.MenuButton6.BorderColor = System.Drawing.Color.Gold;
-            this.MenuButton6.BorderThickness = 1;
-            this.MenuButton6.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            this.MenuButton6.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.MenuButton6.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.MenuButton6.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.MenuButton6.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.MenuButton6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.MenuButton6.FillColor = System.Drawing.Color.OrangeRed;
-            this.MenuButton6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
-            this.MenuButton6.ForeColor = System.Drawing.Color.LightCyan;
-            this.MenuButton6.ImageOffset = new System.Drawing.Point(0, -10);
-            this.MenuButton6.ImageSize = new System.Drawing.Size(50, 50);
-            this.MenuButton6.IndicateFocus = true;
-            this.MenuButton6.Location = new System.Drawing.Point(0, 319);
-            this.MenuButton6.Name = "MenuButton6";
-            this.MenuButton6.Size = new System.Drawing.Size(160, 45);
-            this.MenuButton6.TabIndex = 6;
-            this.MenuButton6.Text = "МотоБаза";
-            // 
-            // MenuButton5
-            // 
-            this.MenuButton5.Animated = true;
-            this.MenuButton5.BorderColor = System.Drawing.Color.Gold;
-            this.MenuButton5.BorderThickness = 1;
-            this.MenuButton5.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            this.MenuButton5.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.MenuButton5.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.MenuButton5.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.MenuButton5.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.MenuButton5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.MenuButton5.FillColor = System.Drawing.Color.OrangeRed;
-            this.MenuButton5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
-            this.MenuButton5.ForeColor = System.Drawing.Color.LightCyan;
-            this.MenuButton5.ImageOffset = new System.Drawing.Point(0, -10);
-            this.MenuButton5.ImageSize = new System.Drawing.Size(50, 50);
-            this.MenuButton5.IndicateFocus = true;
-            this.MenuButton5.Location = new System.Drawing.Point(0, 274);
-            this.MenuButton5.Name = "MenuButton5";
-            this.MenuButton5.Size = new System.Drawing.Size(160, 45);
-            this.MenuButton5.TabIndex = 5;
-            this.MenuButton5.Text = "МотоБаза";
             // 
             // MenuButton4
             // 
@@ -170,12 +113,14 @@ namespace курсач
             this.MenuButton4.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.MenuButton4.ImageSize = new System.Drawing.Size(40, 40);
             this.MenuButton4.IndicateFocus = true;
-            this.MenuButton4.Location = new System.Drawing.Point(0, 229);
+            this.MenuButton4.Location = new System.Drawing.Point(0, 307);
             this.MenuButton4.Name = "MenuButton4";
-            this.MenuButton4.Size = new System.Drawing.Size(160, 45);
+            this.MenuButton4.Size = new System.Drawing.Size(160, 71);
             this.MenuButton4.TabIndex = 4;
             this.MenuButton4.Text = "История";
             this.MenuButton4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.MenuButton4.CheckedChanged += new System.EventHandler(this.MenuButton1_CheckedChanged);
+            this.MenuButton4.Click += new System.EventHandler(this.MenuButton4_Click);
             // 
             // MenuButton3
             // 
@@ -195,12 +140,14 @@ namespace курсач
             this.MenuButton3.ImageOffset = new System.Drawing.Point(0, -2);
             this.MenuButton3.ImageSize = new System.Drawing.Size(50, 50);
             this.MenuButton3.IndicateFocus = true;
-            this.MenuButton3.Location = new System.Drawing.Point(0, 184);
+            this.MenuButton3.Location = new System.Drawing.Point(0, 236);
             this.MenuButton3.Name = "MenuButton3";
-            this.MenuButton3.Size = new System.Drawing.Size(160, 45);
+            this.MenuButton3.Size = new System.Drawing.Size(160, 71);
             this.MenuButton3.TabIndex = 3;
             this.MenuButton3.Text = "Персонал";
             this.MenuButton3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.MenuButton3.CheckedChanged += new System.EventHandler(this.MenuButton1_CheckedChanged);
+            this.MenuButton3.Click += new System.EventHandler(this.MenuButton3_Click);
             // 
             // MenuButton2
             // 
@@ -221,12 +168,14 @@ namespace курсач
             this.MenuButton2.ImageOffset = new System.Drawing.Point(0, -3);
             this.MenuButton2.ImageSize = new System.Drawing.Size(50, 50);
             this.MenuButton2.IndicateFocus = true;
-            this.MenuButton2.Location = new System.Drawing.Point(0, 139);
+            this.MenuButton2.Location = new System.Drawing.Point(0, 165);
             this.MenuButton2.Name = "MenuButton2";
-            this.MenuButton2.Size = new System.Drawing.Size(160, 45);
+            this.MenuButton2.Size = new System.Drawing.Size(160, 71);
             this.MenuButton2.TabIndex = 2;
             this.MenuButton2.Text = "Клиенты";
             this.MenuButton2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.MenuButton2.CheckedChanged += new System.EventHandler(this.MenuButton1_CheckedChanged);
+            this.MenuButton2.Click += new System.EventHandler(this.MenuButton2_Click);
             // 
             // MenuButton1
             // 
@@ -247,10 +196,11 @@ namespace курсач
             this.MenuButton1.IndicateFocus = true;
             this.MenuButton1.Location = new System.Drawing.Point(0, 94);
             this.MenuButton1.Name = "MenuButton1";
-            this.MenuButton1.Size = new System.Drawing.Size(160, 45);
+            this.MenuButton1.Size = new System.Drawing.Size(160, 71);
             this.MenuButton1.TabIndex = 0;
             this.MenuButton1.Text = "МотоБаза";
             this.MenuButton1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.MenuButton1.CheckedChanged += new System.EventHandler(this.MenuButton1_CheckedChanged);
             // 
             // panel3
             // 
@@ -260,6 +210,33 @@ namespace курсач
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(160, 94);
             this.panel3.TabIndex = 1;
+            // 
+            // motoBaseForStaff1
+            // 
+            this.motoBaseForStaff1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.motoBaseForStaff1.Location = new System.Drawing.Point(0, 0);
+            this.motoBaseForStaff1.Name = "motoBaseForStaff1";
+            this.motoBaseForStaff1.Size = new System.Drawing.Size(640, 450);
+            this.motoBaseForStaff1.TabIndex = 1;
+            // 
+            // motoBase1
+            // 
+            this.motoBase1.AutoScroll = true;
+            this.motoBase1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.motoBase1.Location = new System.Drawing.Point(0, 0);
+            this.motoBase1.Margin = new System.Windows.Forms.Padding(0);
+            this.motoBase1.Name = "motoBase1";
+            this.motoBase1.Size = new System.Drawing.Size(640, 450);
+            this.motoBase1.TabIndex = 0;
+            this.motoBase1.Load += new System.EventHandler(this.motoBase1_Load);
+            // 
+            // clients1
+            // 
+            this.clients1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.clients1.Location = new System.Drawing.Point(0, 0);
+            this.clients1.Name = "clients1";
+            this.clients1.Size = new System.Drawing.Size(640, 450);
+            this.clients1.TabIndex = 2;
             // 
             // Просмотр_мотоциклов
             // 
@@ -287,10 +264,10 @@ namespace курсач
         private Guna.UI2.WinForms.Guna2Button MenuButton1;
         private System.Windows.Forms.Panel panel3;
         private Guna.UI2.WinForms.Guna2Button MenuButton7;
-        private Guna.UI2.WinForms.Guna2Button MenuButton6;
-        private Guna.UI2.WinForms.Guna2Button MenuButton5;
         private Guna.UI2.WinForms.Guna2Button MenuButton4;
         private Guna.UI2.WinForms.Guna2Button MenuButton3;
         private Guna.UI2.WinForms.Guna2Button MenuButton2;
+        private User_Controls.MotoBaseForStaff motoBaseForStaff1;
+        private User_Controls.Clients clients1;
     }
 }

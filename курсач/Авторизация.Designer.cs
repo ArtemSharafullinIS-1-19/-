@@ -109,7 +109,7 @@ namespace курсач
             this.passwordBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.passwordBox.Location = new System.Drawing.Point(9, 189);
             this.passwordBox.Name = "passwordBox";
-            this.passwordBox.PasswordChar = '\0';
+            this.passwordBox.PasswordChar = '*';
             this.passwordBox.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.passwordBox.PlaceholderText = "Введите пароль";
             this.passwordBox.SelectedText = "";

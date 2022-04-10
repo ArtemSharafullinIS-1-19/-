@@ -32,13 +32,13 @@ namespace курсач
             this.guna2GradientButton1 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2GradientButton2 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.nameBox = new Guna.UI2.WinForms.Guna2TextBox();
-            this.logonBox = new Guna.UI2.WinForms.Guna2TextBox();
-            this.passwordText = new Guna.UI2.WinForms.Guna2TextBox();
+            this.loginBox = new Guna.UI2.WinForms.Guna2TextBox();
+            this.passwordBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.phoneBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.emailText = new Guna.UI2.WinForms.Guna2TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.emailText = new Guna.UI2.WinForms.Guna2TextBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -116,58 +116,58 @@ namespace курсач
             this.nameBox.TabIndex = 12;
             this.nameBox.TextChanged += new System.EventHandler(this.guna2TextBox1_TextChanged);
             // 
-            // logonBox
+            // loginBox
             // 
-            this.logonBox.Animated = true;
-            this.logonBox.AutoRoundedCorners = true;
-            this.logonBox.BackColor = System.Drawing.Color.Transparent;
-            this.logonBox.BorderColor = System.Drawing.Color.Black;
-            this.logonBox.BorderRadius = 17;
-            this.logonBox.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.logonBox.DefaultText = "";
-            this.logonBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.logonBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.logonBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.logonBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.logonBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.logonBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.logonBox.ForeColor = System.Drawing.Color.Black;
-            this.logonBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.logonBox.Location = new System.Drawing.Point(12, 133);
-            this.logonBox.Name = "logonBox";
-            this.logonBox.PasswordChar = '\0';
-            this.logonBox.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.logonBox.PlaceholderText = "Укажите Ваш логин";
-            this.logonBox.SelectedText = "";
-            this.logonBox.Size = new System.Drawing.Size(255, 36);
-            this.logonBox.TabIndex = 13;
-            this.logonBox.TextChanged += new System.EventHandler(this.guna2TextBox2_TextChanged);
+            this.loginBox.Animated = true;
+            this.loginBox.AutoRoundedCorners = true;
+            this.loginBox.BackColor = System.Drawing.Color.Transparent;
+            this.loginBox.BorderColor = System.Drawing.Color.Black;
+            this.loginBox.BorderRadius = 17;
+            this.loginBox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.loginBox.DefaultText = "";
+            this.loginBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.loginBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.loginBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.loginBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.loginBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.loginBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
+            this.loginBox.ForeColor = System.Drawing.Color.Black;
+            this.loginBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.loginBox.Location = new System.Drawing.Point(12, 133);
+            this.loginBox.Name = "loginBox";
+            this.loginBox.PasswordChar = '\0';
+            this.loginBox.PlaceholderForeColor = System.Drawing.Color.Silver;
+            this.loginBox.PlaceholderText = "Укажите Ваш логин";
+            this.loginBox.SelectedText = "";
+            this.loginBox.Size = new System.Drawing.Size(255, 36);
+            this.loginBox.TabIndex = 13;
+            this.loginBox.TextChanged += new System.EventHandler(this.guna2TextBox2_TextChanged);
             // 
-            // passwordText
+            // passwordBox
             // 
-            this.passwordText.Animated = true;
-            this.passwordText.AutoRoundedCorners = true;
-            this.passwordText.BackColor = System.Drawing.Color.Transparent;
-            this.passwordText.BorderColor = System.Drawing.Color.Black;
-            this.passwordText.BorderRadius = 17;
-            this.passwordText.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.passwordText.DefaultText = "";
-            this.passwordText.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.passwordText.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.passwordText.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.passwordText.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.passwordText.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.passwordText.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.passwordText.ForeColor = System.Drawing.Color.Black;
-            this.passwordText.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.passwordText.Location = new System.Drawing.Point(12, 245);
-            this.passwordText.Name = "passwordText";
-            this.passwordText.PasswordChar = '\0';
-            this.passwordText.PlaceholderText = "Придумайте пароль";
-            this.passwordText.SelectedText = "";
-            this.passwordText.Size = new System.Drawing.Size(255, 36);
-            this.passwordText.TabIndex = 14;
-            this.passwordText.TextChanged += new System.EventHandler(this.guna2TextBox3_TextChanged);
+            this.passwordBox.Animated = true;
+            this.passwordBox.AutoRoundedCorners = true;
+            this.passwordBox.BackColor = System.Drawing.Color.Transparent;
+            this.passwordBox.BorderColor = System.Drawing.Color.Black;
+            this.passwordBox.BorderRadius = 17;
+            this.passwordBox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.passwordBox.DefaultText = "";
+            this.passwordBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.passwordBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.passwordBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.passwordBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.passwordBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.passwordBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
+            this.passwordBox.ForeColor = System.Drawing.Color.Black;
+            this.passwordBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.passwordBox.Location = new System.Drawing.Point(12, 245);
+            this.passwordBox.Name = "passwordBox";
+            this.passwordBox.PasswordChar = '*';
+            this.passwordBox.PlaceholderText = "Придумайте пароль";
+            this.passwordBox.SelectedText = "";
+            this.passwordBox.Size = new System.Drawing.Size(255, 36);
+            this.passwordBox.TabIndex = 14;
+            this.passwordBox.TextChanged += new System.EventHandler(this.guna2TextBox3_TextChanged);
             // 
             // phoneBox
             // 
@@ -204,33 +204,12 @@ namespace курсач
             this.panel1.Controls.Add(this.guna2GradientButton2);
             this.panel1.Controls.Add(this.phoneBox);
             this.panel1.Controls.Add(this.guna2GradientButton1);
-            this.panel1.Controls.Add(this.logonBox);
-            this.panel1.Controls.Add(this.passwordText);
+            this.panel1.Controls.Add(this.loginBox);
+            this.panel1.Controls.Add(this.passwordBox);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(273, 510);
             this.panel1.TabIndex = 24;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Georgia", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(36, 21);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(198, 31);
-            this.label1.TabIndex = 24;
-            this.label1.Text = "Регистрация";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label3.Font = new System.Drawing.Font("Algerian", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(315, 31);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(342, 56);
-            this.label3.TabIndex = 27;
-            this.label3.Text = "MotoShering";
             // 
             // emailText
             // 
@@ -257,6 +236,27 @@ namespace курсач
             this.emailText.Size = new System.Drawing.Size(255, 36);
             this.emailText.TabIndex = 25;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Georgia", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.Location = new System.Drawing.Point(36, 21);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(198, 31);
+            this.label1.TabIndex = 24;
+            this.label1.Text = "Регистрация";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label3.Font = new System.Drawing.Font("Algerian", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(315, 31);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(342, 56);
+            this.label3.TabIndex = 27;
+            this.label3.Text = "MotoShering";
+            // 
             // Регистрация
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -281,8 +281,8 @@ namespace курсач
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton1;
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton2;
         private Guna.UI2.WinForms.Guna2TextBox nameBox;
-        private Guna.UI2.WinForms.Guna2TextBox logonBox;
-        private Guna.UI2.WinForms.Guna2TextBox passwordText;
+        private Guna.UI2.WinForms.Guna2TextBox loginBox;
+        private Guna.UI2.WinForms.Guna2TextBox passwordBox;
         private Guna.UI2.WinForms.Guna2TextBox phoneBox;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;

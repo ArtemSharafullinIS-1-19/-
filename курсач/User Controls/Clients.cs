@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace курсач.User_Controls
 {
-    public partial class MotoBaseForStaff : UserControl
+    public partial class Clients : UserControl
     {
-        public MotoBaseForStaff()
+        public Clients()
         {
             InitializeComponent();
         }
@@ -20,9 +20,8 @@ namespace курсач.User_Controls
         //Переменная для ID записи в БД, выбранной в гриде. Пока она не содержит значения, лучше его инициализировать с 0
         //что бы в БД не отправлялся null
         public static string id_selected_rows = "0";
-        private void MotoBaseForStaff_Load(object sender, EventArgs e)
+        private void Clients_Load(object sender, EventArgs e)
         {
-
             //DataGridView.DataSource = Classes.DBConn.GetListUsers(request);
             ////Видимость полей в гриде
             //for (int i = 0; i < DataGridView.Columns.Count; i++)
