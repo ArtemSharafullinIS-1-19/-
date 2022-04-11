@@ -15,6 +15,8 @@ namespace курсач.Classes
         //Статичное поле, которое хранит значения ФИО пользователя
         public static string auth_fio = null;
         public static string auth_email = null;
+        public static string auth_login = null;
+        public static string auth_phone = null;
         //Статичное поле, которое хранит количество привелегий пользователя
         public static string auth_doljnost = null;
         public static bool auth_is_admin = false;

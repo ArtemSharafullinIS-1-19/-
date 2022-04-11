@@ -16,40 +16,40 @@ namespace курсач.User_Controls
         {
             InitializeComponent();
         }
-        public static string request = "SELECT ИмяСтолбца AS 'НазваниеСтолбцаВБД', ИмяСтолбца AS 'НазваниеСтолбцаВБД', ИмяСтолбца AS 'НазваниеСтолбцаВБД', ИмяСтолбца AS 'НазваниеСтолбцаВБД', ИмяСтолбца AS 'НазваниеСтолбцаВБД', ИмяСтолбца AS 'НазваниеСтолбцаВБД' FROM ТаблицаВБД";
+        public static string request = "SELECT id AS 'id', stamp AS 'Марка', power AS 'Мощьность', Number AS 'Номер мотоцикла', Color AS 'Цвет', Price AS 'Цена' FROM MotoBase";
         //Переменная для ID записи в БД, выбранной в гриде. Пока она не содержит значения, лучше его инициализировать с 0
         //что бы в БД не отправлялся null
         public static string id_selected_rows = "0";
         private void MotoBaseForStaff_Load(object sender, EventArgs e)
         {
 
-            //DataGridView.DataSource = Classes.DBConn.GetListUsers(request);
-            ////Видимость полей в гриде
-            //for (int i = 0; i < DataGridView.Columns.Count; i++)
-            //{
-            //    DataGridView.Columns[i].Visible = true;
-            //}
-            ////Ширина полей
-            //DataGridView.Columns[0].FillWeight = 5;
-            //DataGridView.Columns[1].FillWeight = 40;
-            //DataGridView.Columns[2].FillWeight = 10;
-            //DataGridView.Columns[3].FillWeight = 10;
-            //DataGridView.Columns[4].FillWeight = 20;
-            //DataGridView.Columns[5].FillWeight = 15;
-            ////Режим для полей "Только для чтения"
-            //for (int i = 0; i < DataGridView.Columns.Count; i++)
-            //{
-            //    DataGridView.Columns[i].ReadOnly = true;
-            //}
-            ////Растягивание полей грида
-            //for (int i = 0; i < DataGridView.Columns.Count; i++)
-            //{
-            //    DataGridView.Columns[i].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            //}
-            ////Убираем заголовки строк
-            //DataGridView.RowHeadersVisible = false;
-            ////Показываем заголовки столбцов
-            //DataGridView.ColumnHeadersVisible = true;
+            DataGridView.DataSource = Classes.DBConn.GetListUsers(request);
+            //Видимость полей в гриде
+            for (int i = 0; i < DataGridView.Columns.Count; i++)
+            {
+                DataGridView.Columns[i].Visible = true;
+            }
+            //Ширина полей
+            DataGridView.Columns[0].FillWeight = 5;
+            DataGridView.Columns[1].FillWeight = 40;
+            DataGridView.Columns[2].FillWeight = 10;
+            DataGridView.Columns[3].FillWeight = 10;
+            DataGridView.Columns[4].FillWeight = 20;
+            DataGridView.Columns[5].FillWeight = 15;
+            //Режим для полей "Только для чтения"
+            for (int i = 0; i < DataGridView.Columns.Count; i++)
+            {
+                DataGridView.Columns[i].ReadOnly = true;
+            }
+            //Растягивание полей грида
+            for (int i = 0; i < DataGridView.Columns.Count; i++)
+            {
+                DataGridView.Columns[i].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            }
+            //Убираем заголовки строк
+            DataGridView.RowHeadersVisible = false;
+            //Показываем заголовки столбцов
+            DataGridView.ColumnHeadersVisible = true;
         }
 
         //Метод обновления DataGreed

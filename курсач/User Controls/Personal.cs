@@ -10,18 +10,17 @@ using System.Windows.Forms;
 
 namespace курсач.User_Controls
 {
-    public partial class Clients : UserControl
+    public partial class Personal : UserControl
     {
-        public Clients()
+        public Personal()
         {
             InitializeComponent();
         }
-        public static string request = "SELECT id AS 'id', Name AS 'ФИО', number AS 'Номер телефона', email AS 'Email', login AS 'Логин' FROM clients";
+        public static string request = "SELECT id AS 'id', FIO AS 'ФИО', Должность AS 'Должность', login AS 'Логин' FROM Personal";
         //Переменная для ID записи в БД, выбранной в гриде. Пока она не содержит значения, лучше его инициализировать с 0
         //что бы в БД не отправлялся null
         public static string id_selected_rows = "0";
-        public static BindingSource bsourse = Classes.DBConn.GetListUsers(request);
-        private void Clients_Load(object sender, EventArgs e)
+        private void Personal_Load(object sender, EventArgs e)
         {
             DataGridView.DataSource = Classes.DBConn.GetListUsers(request);
             //Видимость полей в гриде
@@ -34,7 +33,8 @@ namespace курсач.User_Controls
             DataGridView.Columns[1].FillWeight = 40;
             DataGridView.Columns[2].FillWeight = 10;
             DataGridView.Columns[3].FillWeight = 10;
-            DataGridView.Columns[4].FillWeight = 20;
+            
+            
             //Режим для полей "Только для чтения"
             for (int i = 0; i < DataGridView.Columns.Count; i++)
             {
@@ -76,7 +76,7 @@ namespace курсач.User_Controls
             Reload();
         }
 
-        //Метод получения ID выделенной строки, для последующего вызова его в нужных методах 
+        //Метод получения ID выделенной строки, для последующего вызова его в нужных методах
         public void GetSelectedIDString()
         {
             //Переменная для индекс выбранной строки в гриде
@@ -87,9 +87,10 @@ namespace курсач.User_Controls
             id_selected_rows = DataGridView.Rows[Convert.ToInt32(index_selected_rows)].Cells[0].Value.ToString();
         }
 
+
         private void TextBox_TextChanged(object sender, EventArgs e)
         {
-            Classes.DBConn.Search("Логин LIKE'", TextBox.Text);
+            Classes.DBConn.Search("ИмяСтолбцаВДатаГрид LIKE'", TextBox.Text);
         }
 
         private void DataGridView_CellMouseDown(object sender, DataGridViewCellMouseEventArgs e)

@@ -19,7 +19,11 @@ namespace курсач
 
         private void Профиль_Load(object sender, EventArgs e)
         {
-            
+            label5.Text = Classes.Auth.auth_fio;
+            label6.Text = Classes.Auth.auth_login;
+            label6.Text = Classes.Auth.auth_phone;
+
+
         }
 
         private void guna2GradientButton1_Click(object sender, EventArgs e)

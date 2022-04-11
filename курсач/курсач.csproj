@@ -104,6 +104,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="User Controls\Personal.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\Personal.Designer.cs">
+      <DependentUpon>Personal.cs</DependentUpon>
+    </Compile>
     <Compile Include="User Controls\MotoBaseForClients.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -121,6 +127,12 @@
     </Compile>
     <Compile Include="User Controls\MotoBaseForStaff.Designer.cs">
       <DependentUpon>MotoBaseForStaff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\Profil.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\Profil.Designer.cs">
+      <DependentUpon>Profil.cs</DependentUpon>
     </Compile>
     <Compile Include="Авторизация.cs">
       <SubType>Form</SubType>
@@ -151,6 +163,9 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\Personal.resx">
+      <DependentUpon>Personal.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="User Controls\MotoBaseForClients.resx">
       <DependentUpon>MotoBaseForClients.cs</DependentUpon>
     </EmbeddedResource>
@@ -159,6 +174,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="User Controls\MotoBaseForStaff.resx">
       <DependentUpon>MotoBaseForStaff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\Profil.resx">
+      <DependentUpon>Profil.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Авторизация.resx">
       <DependentUpon>Авторизация.cs</DependentUpon>

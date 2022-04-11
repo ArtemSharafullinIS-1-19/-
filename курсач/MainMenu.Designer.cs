@@ -36,16 +36,18 @@ namespace курсач
             this.MenuButton3 = new Guna.UI2.WinForms.Guna2Button();
             this.MenuButton2 = new Guna.UI2.WinForms.Guna2Button();
             this.MenuButton1 = new Guna.UI2.WinForms.Guna2Button();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.motoBaseForStaff1 = new курсач.User_Controls.MotoBaseForStaff();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.personal1 = new курсач.User_Controls.Personal();
             this.motoBase1 = new курсач.User_Controls.MotoBaseForClients();
             this.clients1 = new курсач.User_Controls.Clients();
+            this.motoBaseForStaff1 = new курсач.User_Controls.MotoBaseForStaff();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.personal1);
             this.panel1.Controls.Add(this.motoBase1);
             this.panel1.Controls.Add(this.clients1);
             this.panel1.Controls.Add(this.motoBaseForStaff1);
@@ -63,7 +65,7 @@ namespace курсач
             this.panel2.Controls.Add(this.MenuButton3);
             this.panel2.Controls.Add(this.MenuButton2);
             this.panel2.Controls.Add(this.MenuButton1);
-            this.panel2.Controls.Add(this.panel3);
+            this.panel2.Controls.Add(this.guna2Button1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
@@ -202,22 +204,39 @@ namespace курсач
             this.MenuButton1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.MenuButton1.CheckedChanged += new System.EventHandler(this.MenuButton1_CheckedChanged);
             // 
-            // panel3
+            // guna2Button1
             // 
-            this.panel3.BackColor = System.Drawing.Color.DarkRed;
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(160, 94);
-            this.panel3.TabIndex = 1;
+            this.guna2Button1.Animated = true;
+            this.guna2Button1.BorderColor = System.Drawing.Color.Gold;
+            this.guna2Button1.BorderThickness = 1;
+            this.guna2Button1.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2Button1.FillColor = System.Drawing.Color.Salmon;
+            this.guna2Button1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
+            this.guna2Button1.ForeColor = System.Drawing.Color.LightCyan;
+            this.guna2Button1.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.guna2Button1.ImageSize = new System.Drawing.Size(40, 40);
+            this.guna2Button1.IndicateFocus = true;
+            this.guna2Button1.Location = new System.Drawing.Point(0, 0);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.Size = new System.Drawing.Size(160, 94);
+            this.guna2Button1.TabIndex = 8;
+            this.guna2Button1.Text = "Профиль";
+            this.guna2Button1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            
             // 
-            // motoBaseForStaff1
+            // personal1
             // 
-            this.motoBaseForStaff1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.motoBaseForStaff1.Location = new System.Drawing.Point(0, 0);
-            this.motoBaseForStaff1.Name = "motoBaseForStaff1";
-            this.motoBaseForStaff1.Size = new System.Drawing.Size(640, 450);
-            this.motoBaseForStaff1.TabIndex = 1;
+            this.personal1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.personal1.Location = new System.Drawing.Point(0, 0);
+            this.personal1.Name = "personal1";
+            this.personal1.Size = new System.Drawing.Size(640, 450);
+            this.personal1.TabIndex = 12;
+            this.personal1.Load += new System.EventHandler(this.personal1_Load);
             // 
             // motoBase1
             // 
@@ -237,6 +256,14 @@ namespace курсач
             this.clients1.Name = "clients1";
             this.clients1.Size = new System.Drawing.Size(640, 450);
             this.clients1.TabIndex = 2;
+            // 
+            // motoBaseForStaff1
+            // 
+            this.motoBaseForStaff1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.motoBaseForStaff1.Location = new System.Drawing.Point(0, 0);
+            this.motoBaseForStaff1.Name = "motoBaseForStaff1";
+            this.motoBaseForStaff1.Size = new System.Drawing.Size(640, 450);
+            this.motoBaseForStaff1.TabIndex = 1;
             // 
             // Просмотр_мотоциклов
             // 
@@ -262,12 +289,13 @@ namespace курсач
         private System.Windows.Forms.Panel panel2;
         private User_Controls.MotoBaseForClients motoBase1;
         private Guna.UI2.WinForms.Guna2Button MenuButton1;
-        private System.Windows.Forms.Panel panel3;
         private Guna.UI2.WinForms.Guna2Button MenuButton7;
         private Guna.UI2.WinForms.Guna2Button MenuButton4;
         private Guna.UI2.WinForms.Guna2Button MenuButton3;
         private Guna.UI2.WinForms.Guna2Button MenuButton2;
         private User_Controls.MotoBaseForStaff motoBaseForStaff1;
         private User_Controls.Clients clients1;
+        private User_Controls.Personal personal1;
+        private Guna.UI2.WinForms.Guna2Button guna2Button1;
     }
 }
