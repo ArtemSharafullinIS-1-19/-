@@ -37,16 +37,20 @@ namespace курсач
             this.MenuButton2 = new Guna.UI2.WinForms.Guna2Button();
             this.MenuButton1 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.history1 = new курсач.User_Controls.History();
             this.personal1 = new курсач.User_Controls.Personal();
             this.motoBase1 = new курсач.User_Controls.MotoBaseForClients();
             this.clients1 = new курсач.User_Controls.Clients();
             this.motoBaseForStaff1 = new курсач.User_Controls.MotoBaseForStaff();
+            this.profil1 = new курсач.User_Controls.Profil();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.history1);
+            this.panel1.Controls.Add(this.profil1);
             this.panel1.Controls.Add(this.personal1);
             this.panel1.Controls.Add(this.motoBase1);
             this.panel1.Controls.Add(this.clients1);
@@ -227,7 +231,14 @@ namespace курсач
             this.guna2Button1.TabIndex = 8;
             this.guna2Button1.Text = "Профиль";
             this.guna2Button1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            
+            // 
+            // history1
+            // 
+            this.history1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.history1.Location = new System.Drawing.Point(0, 0);
+            this.history1.Name = "history1";
+            this.history1.Size = new System.Drawing.Size(640, 450);
+            this.history1.TabIndex = 9;
             // 
             // personal1
             // 
@@ -236,7 +247,6 @@ namespace курсач
             this.personal1.Name = "personal1";
             this.personal1.Size = new System.Drawing.Size(640, 450);
             this.personal1.TabIndex = 12;
-            this.personal1.Load += new System.EventHandler(this.personal1_Load);
             // 
             // motoBase1
             // 
@@ -265,6 +275,14 @@ namespace курсач
             this.motoBaseForStaff1.Size = new System.Drawing.Size(640, 450);
             this.motoBaseForStaff1.TabIndex = 1;
             // 
+            // profil1
+            // 
+            this.profil1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.profil1.Location = new System.Drawing.Point(0, 0);
+            this.profil1.Name = "profil1";
+            this.profil1.Size = new System.Drawing.Size(640, 450);
+            this.profil1.TabIndex = 13;
+            // 
             // Просмотр_мотоциклов
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -278,6 +296,7 @@ namespace курсач
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Просмотр_мотоциклов";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Просмотр_мотоциклов_FormClosed);
+            this.Load += new System.EventHandler(this.Просмотр_мотоциклов_Load);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -295,7 +314,9 @@ namespace курсач
         private Guna.UI2.WinForms.Guna2Button MenuButton2;
         private User_Controls.MotoBaseForStaff motoBaseForStaff1;
         private User_Controls.Clients clients1;
-        private User_Controls.Personal personal1;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private User_Controls.Personal personal1;
+        private User_Controls.History history1;
+        private User_Controls.Profil profil1;
     }
 }

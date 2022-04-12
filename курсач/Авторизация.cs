@@ -16,7 +16,7 @@ namespace курсач
         public Авторизация()
         {
             InitializeComponent();
-            
+            this.AcceptButton = guna2GradientButton1;
         }
 
         public void GetUserInfo(string login)
@@ -38,6 +38,7 @@ namespace курсач
                     Classes.Auth.auth_id = reader[0].ToString();
                     Classes.Auth.auth_fio = reader[1].ToString();
                     Classes.Auth.auth_doljnost = reader[2].ToString();
+                    Classes.Auth.auth_login = reader[3].ToString();
                 }
                 reader.Close(); // закрываем reader
                                 // закрываем соединение с БД
@@ -95,6 +96,7 @@ namespace курсач
 
         private void guna2GradientButton1_Click(object sender, EventArgs e)
         {
+
             //Запрос в БД на предмет того, если ли строка с подходящим логином и паролем
             var sql = "SELECT * FROM Users WHERE login = @un and  password= @up";
             //Открытие соединения
@@ -170,6 +172,9 @@ namespace курсач
             ToolTip t2 = new ToolTip();
             t2.SetToolTip(linkLabel1, "Нажмите, чтоб зарегистрироваться");
 
+            
+            
+
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -192,6 +197,11 @@ namespace курсач
             this.Hide();
             Регистрация Регистрация = new Регистрация();
             Регистрация.ShowDialog();
+        }
+
+        private void panel1_Paint_1(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

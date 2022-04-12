@@ -32,12 +32,10 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.DeleteBox = new System.Windows.Forms.PictureBox();
             this.AddBox = new System.Windows.Forms.PictureBox();
             this.PencilBox = new System.Windows.Forms.PictureBox();
             this.SearchBox = new System.Windows.Forms.PictureBox();
-            this.TextBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.DataGridView = new Guna.UI2.WinForms.Guna2DataGridView();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DeleteBox)).BeginInit();
@@ -50,36 +48,16 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Red;
-            this.panel1.Controls.Add(this.guna2Button1);
             this.panel1.Controls.Add(this.DeleteBox);
             this.panel1.Controls.Add(this.AddBox);
             this.panel1.Controls.Add(this.PencilBox);
             this.panel1.Controls.Add(this.SearchBox);
-            this.panel1.Controls.Add(this.TextBox);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(640, 39);
             this.panel1.TabIndex = 0;
-            // 
-            // guna2Button1
-            // 
-            this.guna2Button1.Animated = true;
-            this.guna2Button1.BorderColor = System.Drawing.Color.Transparent;
-            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button1.FillColor = System.Drawing.Color.Transparent;
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.guna2Button1.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button1.Location = new System.Drawing.Point(0, 0);
-            this.guna2Button1.Margin = new System.Windows.Forms.Padding(0);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(41, 39);
-            this.guna2Button1.TabIndex = 1;
-            this.guna2Button1.Text = "❮";
             // 
             // DeleteBox
             // 
@@ -131,29 +109,6 @@
             this.SearchBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.SearchBox.TabIndex = 1;
             this.SearchBox.TabStop = false;
-            // 
-            // TextBox
-            // 
-            this.TextBox.Animated = true;
-            this.TextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TextBox.DefaultText = "";
-            this.TextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.TextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.TextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.TextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.TextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TextBox.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.TextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TextBox.Location = new System.Drawing.Point(220, 0);
-            this.TextBox.Margin = new System.Windows.Forms.Padding(0);
-            this.TextBox.Name = "TextBox";
-            this.TextBox.PasswordChar = '\0';
-            this.TextBox.PlaceholderText = "Поиск персонала";
-            this.TextBox.SelectedText = "";
-            this.TextBox.Size = new System.Drawing.Size(200, 39);
-            this.TextBox.TabIndex = 0;
-            this.TextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.TextBox.TextChanged += new System.EventHandler(this.TextBox_TextChanged);
             // 
             // DataGridView
             // 
@@ -238,8 +193,6 @@
         private System.Windows.Forms.Panel panel1;
         private Guna.UI2.WinForms.Guna2DataGridView DataGridView;
         private System.Windows.Forms.PictureBox SearchBox;
-        private Guna.UI2.WinForms.Guna2TextBox TextBox;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private System.Windows.Forms.PictureBox DeleteBox;
         private System.Windows.Forms.PictureBox AddBox;
         private System.Windows.Forms.PictureBox PencilBox;

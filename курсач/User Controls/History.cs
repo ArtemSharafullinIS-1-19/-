@@ -10,19 +10,19 @@ using System.Windows.Forms;
 
 namespace курсач.User_Controls
 {
-    public partial class MotoBaseForStaff : UserControl
+    public partial class History : UserControl
     {
-        public MotoBaseForStaff()
+        public History()
         {
             InitializeComponent();
         }
-        public static string request = "SELECT id AS 'id', stamp AS 'Марка', power AS 'Мощьность', Number AS 'Номер мотоцикла', Color AS 'Цвет', Price AS 'Цена' FROM MotoBase";
+
+        public static string request = "SELECT id AS 'id', id_user AS 'Код пользователя', Datazakaza AS 'Дата заказа', Dataokonchaniya AS 'Дата окончания заказа', Sum AS 'Сумма' FROM History";
         //Переменная для ID записи в БД, выбранной в гриде. Пока она не содержит значения, лучше его инициализировать с 0
         //что бы в БД не отправлялся null
         public static string id_selected_rows = "0";
-        private void MotoBaseForStaff_Load(object sender, EventArgs e)
+        private void History_Load(object sender, EventArgs e)
         {
-
             DataGridView.DataSource = Classes.DBConn.GetListUsers(request);
             //Видимость полей в гриде
             for (int i = 0; i < DataGridView.Columns.Count; i++)
@@ -30,12 +30,13 @@ namespace курсач.User_Controls
                 DataGridView.Columns[i].Visible = true;
             }
             //Ширина полей
-            DataGridView.Columns[0].FillWeight = 5;
-            DataGridView.Columns[1].FillWeight = 40;
+            DataGridView.Columns[0].FillWeight = 3;
+            DataGridView.Columns[1].FillWeight = 10;
             DataGridView.Columns[2].FillWeight = 10;
             DataGridView.Columns[3].FillWeight = 10;
-            DataGridView.Columns[4].FillWeight = 20;
-            DataGridView.Columns[5].FillWeight = 15;
+            DataGridView.Columns[4].FillWeight = 10;
+
+
             //Режим для полей "Только для чтения"
             for (int i = 0; i < DataGridView.Columns.Count; i++)
             {
@@ -61,23 +62,6 @@ namespace курсач.User_Controls
             DataGridView.DataSource = Classes.DBConn.GetListUsers(request);
         }
 
-        private void PencilBox_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void AddBox_Click(object sender, EventArgs e)
-        {
-            // тут херачить вызов формы с добавлением или еще чето придумать
-        }
-
-        private void DeleteBox_Click(object sender, EventArgs e)
-        {
-            Classes.DBConn.DeleteUser("DELETE FROM Products WHERE ID_Product='", id_selected_rows);
-            Reload();
-        }
-
-        //Метод получения ID выделенной строки, для последующего вызова его в нужных методах
         public void GetSelectedIDString()
         {
             //Переменная для индекс выбранной строки в гриде
@@ -86,24 +70,6 @@ namespace курсач.User_Controls
             index_selected_rows = DataGridView.SelectedCells[0].RowIndex.ToString();
             //ID конкретной записи в Базе данных, на основании индекса строки
             id_selected_rows = DataGridView.Rows[Convert.ToInt32(index_selected_rows)].Cells[0].Value.ToString();
-        }
-
-
-        private void TextBox_TextChanged(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void DataGridView_CellMouseDown(object sender, DataGridViewCellMouseEventArgs e)
-        {
-            if (!e.RowIndex.Equals(-1) && !e.ColumnIndex.Equals(-1) && e.Button.Equals(MouseButtons.Right))
-            {
-                DataGridView.CurrentCell = DataGridView[e.ColumnIndex, e.RowIndex];
-                //dataGridView1.CurrentRow.Selected = true;
-                DataGridView.CurrentCell.Selected = true;
-                //Метод получения ID выделенной строки в глобальную переменную
-                GetSelectedIDString();
-            }
         }
 
         private void DataGridView_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)

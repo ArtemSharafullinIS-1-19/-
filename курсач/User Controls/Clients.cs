@@ -20,7 +20,6 @@ namespace курсач.User_Controls
         //Переменная для ID записи в БД, выбранной в гриде. Пока она не содержит значения, лучше его инициализировать с 0
         //что бы в БД не отправлялся null
         public static string id_selected_rows = "0";
-        public static BindingSource bsourse = Classes.DBConn.GetListUsers(request);
         private void Clients_Load(object sender, EventArgs e)
         {
             DataGridView.DataSource = Classes.DBConn.GetListUsers(request);
@@ -89,7 +88,7 @@ namespace курсач.User_Controls
 
         private void TextBox_TextChanged(object sender, EventArgs e)
         {
-            Classes.DBConn.Search("Логин LIKE'", TextBox.Text);
+
         }
 
         private void DataGridView_CellMouseDown(object sender, DataGridViewCellMouseEventArgs e)

@@ -90,7 +90,7 @@ namespace курсач.User_Controls
 
         private void TextBox_TextChanged(object sender, EventArgs e)
         {
-            Classes.DBConn.Search("ИмяСтолбцаВДатаГрид LIKE'", TextBox.Text);
+            
         }
 
         private void DataGridView_CellMouseDown(object sender, DataGridViewCellMouseEventArgs e)

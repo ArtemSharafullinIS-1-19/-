@@ -28,7 +28,7 @@ namespace курсач
         {
             if (Classes.Auth.auth_is_admin)
             {
-
+                history1.Visible = false;
                 motoBase1.Visible = false;
             }
             else
@@ -71,40 +71,27 @@ namespace курсач
 
         private void MenuButton1_CheckedChanged(object sender, EventArgs e)
         {
+
             if (Classes.Auth.auth_is_admin)
             {
                 motoBaseForStaff1.Visible = MenuButton1.Checked;
                 clients1.Visible = MenuButton2.Checked;
+                profil1.Visible = guna2Button1.Checked;
+                history1.Visible = MenuButton4.Checked;
+                personal1.Visible = MenuButton3.Checked; 
             }
             else
             {
+                history1.Visible = MenuButton4.Checked;
                 motoBase1.Visible = MenuButton1.Checked;
-            }
-            if (Classes.Auth.auth_is_admin)
-            {
-                personal1.Visible = MenuButton3.Checked;
-            }
-            else
-            {
-
+                profil1.Visible = guna2Button1.Checked;
+                profil1.Visible = guna2Button1.Checked;
             }
         }
 
-        private void personal1_Load(object sender, EventArgs e)
+        private void Просмотр_мотоциклов_Load(object sender, EventArgs e)
         {
 
         }
-
-        private void guna2Button1_Click(object sender, EventArgs e)
-        {
-            Профиль Профиль = new Профиль();
-            Профиль.ShowDialog();
-
-        }
-
-       
     }
-
-      
-    
 }

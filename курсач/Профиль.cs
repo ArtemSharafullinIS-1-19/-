@@ -43,8 +43,7 @@ namespace курсач
 
         private void guna2GradientButton3_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Вы уверены, что хотите выйти из аккаунта?", "Выйти из аккаунта?", MessageBoxButtons.YesNo);
-            Hide();
+            
         }
     }
 }

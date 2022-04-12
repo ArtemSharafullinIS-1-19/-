@@ -32,6 +32,7 @@
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.guna2GradientButton2 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.guna2GradientButton1 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -40,7 +41,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.guna2GradientButton1 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2CustomGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -85,8 +85,30 @@
             this.guna2CustomGradientPanel1.FillColor4 = System.Drawing.Color.DarkRed;
             this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(-14, -8);
             this.guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
-            this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(235, 427);
+            this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(235, 458);
             this.guna2CustomGradientPanel1.TabIndex = 35;
+            // 
+            // guna2GradientButton1
+            // 
+            this.guna2GradientButton1.Animated = true;
+            this.guna2GradientButton1.AutoRoundedCorners = true;
+            this.guna2GradientButton1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2GradientButton1.BorderRadius = 25;
+            this.guna2GradientButton1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2GradientButton1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2GradientButton1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2GradientButton1.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2GradientButton1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2GradientButton1.FillColor = System.Drawing.Color.OrangeRed;
+            this.guna2GradientButton1.FillColor2 = System.Drawing.Color.OrangeRed;
+            this.guna2GradientButton1.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold);
+            this.guna2GradientButton1.ForeColor = System.Drawing.Color.White;
+            this.guna2GradientButton1.IndicateFocus = true;
+            this.guna2GradientButton1.Location = new System.Drawing.Point(36, 248);
+            this.guna2GradientButton1.Name = "guna2GradientButton1";
+            this.guna2GradientButton1.Size = new System.Drawing.Size(150, 53);
+            this.guna2GradientButton1.TabIndex = 28;
+            this.guna2GradientButton1.Text = "Загрузить документ";
             // 
             // pictureBox1
             // 
@@ -101,28 +123,31 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label7.Location = new System.Drawing.Point(331, 146);
+            this.label7.Location = new System.Drawing.Point(345, 146);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(0, 21);
+            this.label7.Size = new System.Drawing.Size(16, 21);
             this.label7.TabIndex = 42;
+            this.label7.Text = "f";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label6.Location = new System.Drawing.Point(314, 125);
+            this.label6.Location = new System.Drawing.Point(304, 125);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(0, 21);
+            this.label6.Size = new System.Drawing.Size(16, 21);
             this.label6.TabIndex = 41;
+            this.label6.Text = "f";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label5.Location = new System.Drawing.Point(304, 104);
+            this.label5.Location = new System.Drawing.Point(292, 104);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(0, 21);
+            this.label5.Size = new System.Drawing.Size(16, 21);
             this.label5.TabIndex = 40;
+            this.label5.Text = "f";
             // 
             // label3
             // 
@@ -130,9 +155,9 @@
             this.label3.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label3.Location = new System.Drawing.Point(238, 146);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(87, 21);
+            this.label3.Size = new System.Drawing.Size(110, 21);
             this.label3.TabIndex = 39;
-            this.label3.Text = "Телефон :";
+            this.label3.Text = "Должность :";
             // 
             // label2
             // 
@@ -165,28 +190,6 @@
             this.label1.TabIndex = 37;
             this.label1.Text = "ФИО :";
             // 
-            // guna2GradientButton1
-            // 
-            this.guna2GradientButton1.Animated = true;
-            this.guna2GradientButton1.AutoRoundedCorners = true;
-            this.guna2GradientButton1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2GradientButton1.BorderRadius = 25;
-            this.guna2GradientButton1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2GradientButton1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2GradientButton1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2GradientButton1.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2GradientButton1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2GradientButton1.FillColor = System.Drawing.Color.OrangeRed;
-            this.guna2GradientButton1.FillColor2 = System.Drawing.Color.OrangeRed;
-            this.guna2GradientButton1.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold);
-            this.guna2GradientButton1.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientButton1.IndicateFocus = true;
-            this.guna2GradientButton1.Location = new System.Drawing.Point(36, 248);
-            this.guna2GradientButton1.Name = "guna2GradientButton1";
-            this.guna2GradientButton1.Size = new System.Drawing.Size(150, 53);
-            this.guna2GradientButton1.TabIndex = 28;
-            this.guna2GradientButton1.Text = "Загрузить документ";
-            // 
             // Profil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -200,7 +203,8 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label1);
             this.Name = "Profil";
-            this.Size = new System.Drawing.Size(640, 411);
+            this.Size = new System.Drawing.Size(640, 450);
+            this.Load += new System.EventHandler(this.Profil_Load_1);
             this.guna2CustomGradientPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
