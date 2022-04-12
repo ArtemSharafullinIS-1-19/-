@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace курсач.User_Controls
 {
@@ -16,7 +17,7 @@ namespace курсач.User_Controls
         {
             InitializeComponent();
         }
-        public static string request = "SELECT id AS 'id', Name AS 'ФИО', number AS 'Номер телефона', email AS 'Email', login AS 'Логин' FROM clients";
+        public static string request = "SELECT id AS 'id', name AS 'ФИО', number AS 'Номер телефона', email AS 'Email', login AS 'Логин' FROM clients";
         //Переменная для ID записи в БД, выбранной в гриде. Пока она не содержит значения, лучше его инициализировать с 0
         //что бы в БД не отправлялся null
         public static string id_selected_rows = "0";
@@ -34,11 +35,7 @@ namespace курсач.User_Controls
             DataGridView.Columns[2].FillWeight = 10;
             DataGridView.Columns[3].FillWeight = 10;
             DataGridView.Columns[4].FillWeight = 20;
-            //Режим для полей "Только для чтения"
-            for (int i = 0; i < DataGridView.Columns.Count; i++)
-            {
-                DataGridView.Columns[i].ReadOnly = true;
-            }
+            
             //Растягивание полей грида
             for (int i = 0; i < DataGridView.Columns.Count; i++)
             {
@@ -67,11 +64,14 @@ namespace курсач.User_Controls
         private void AddBox_Click(object sender, EventArgs e)
         {
             // тут херачить вызов формы с добавлением или еще чето придумать
+            Classes.DBConn.NewRecord($"INSERT INTO clients(name) " +
+                                            $"VALUES ('')");
+            Reload();
         }
 
         private void DeleteBox_Click(object sender, EventArgs e)
         {
-            Classes.DBConn.DeleteUser("DELETE FROM Products WHERE ID_Product='", id_selected_rows);
+            Classes.DBConn.DeleteUser("DELETE FROM clients WHERE id='", id_selected_rows);
             Reload();
         }
 
@@ -113,6 +113,28 @@ namespace курсач.User_Controls
                 //Метод получения ID выделенной строки в глобальную переменную
                 GetSelectedIDString();
             }
+        }
+
+
+        private void DeleteBox_MouseClick(object sender, MouseEventArgs e)
+        {
+            Classes.DBConn.DeleteUser("DELETE FROM clients WHERE id='", id_selected_rows);
+            Reload();
+        }
+
+        private void DataGridView_CellEndEdit(object sender, DataGridViewCellEventArgs e)
+        {
+            // устанавливаем соединение с БД
+            Classes.DBConn.conn.Open();
+            // запрос обновления данных
+            string query2 = $"UPDATE clients SET name='{DataGridView[1, DataGridView.CurrentRow.Index].Value}', number='{DataGridView[2, DataGridView.CurrentRow.Index].Value}', email='{DataGridView[3, DataGridView.CurrentRow.Index].Value}', login='{DataGridView[4, DataGridView.CurrentRow.Index].Value}' WHERE id='{DataGridView.Rows[Convert.ToInt32(DataGridView.SelectedCells[0].RowIndex.ToString())].Cells[0].Value}'";
+            // объект для выполнения SQL-запроса
+            MySqlCommand command = new MySqlCommand(query2, Classes.DBConn.conn);
+            // выполняем запрос
+            command.ExecuteNonQuery();
+            // закрываем подключение к БД
+            Classes.DBConn.conn.Close();
+            Reload();
         }
     }
 }
