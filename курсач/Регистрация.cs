@@ -9,6 +9,7 @@ using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
+using System.Threading;
 
 namespace курсач
 {
@@ -87,9 +88,8 @@ namespace курсач
 
                     MessageBox.Show("Вы успешно зарегистрировались!");
 
-                    this.Hide();
-                    Авторизация Авторизация = new Авторизация();
-                    Авторизация.ShowDialog();
+                    this.Close();
+                    new Thread(() => Application.Run(new Просмотр_мотоциклов())).Start();
                 }// вставь класс IsValid с Некита
                 else
                 {

@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
+using System.Threading;
 
 namespace курсач
 {
@@ -136,9 +137,8 @@ namespace курсач
                 GetUserInfo(loginBox.Text);
                 //Вызов формы в режиме диалога
 
-                Hide();
-                Просмотр_мотоциклов Просмотр_мотоциклов = new Просмотр_мотоциклов();
-                Просмотр_мотоциклов.ShowDialog();
+                this.Close();
+                new Thread(() => Application.Run(new Просмотр_мотоциклов())).Start();
 
             }
             else
