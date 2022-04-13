@@ -35,13 +35,11 @@
             this.DeleteBox = new System.Windows.Forms.PictureBox();
             this.AddBox = new System.Windows.Forms.PictureBox();
             this.PencilBox = new System.Windows.Forms.PictureBox();
-            this.SearchBox = new System.Windows.Forms.PictureBox();
             this.DataGridView = new Guna.UI2.WinForms.Guna2DataGridView();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DeleteBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.AddBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PencilBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.SearchBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -51,7 +49,6 @@
             this.panel1.Controls.Add(this.DeleteBox);
             this.panel1.Controls.Add(this.AddBox);
             this.panel1.Controls.Add(this.PencilBox);
-            this.panel1.Controls.Add(this.SearchBox);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(0);
@@ -71,6 +68,7 @@
             this.DeleteBox.TabIndex = 1;
             this.DeleteBox.TabStop = false;
             this.DeleteBox.Click += new System.EventHandler(this.DeleteBox_Click);
+            this.DeleteBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.DeleteBox_MouseClick);
             // 
             // AddBox
             // 
@@ -97,18 +95,6 @@
             this.PencilBox.TabIndex = 1;
             this.PencilBox.TabStop = false;
             this.PencilBox.Click += new System.EventHandler(this.PencilBox_Click);
-            // 
-            // SearchBox
-            // 
-            this.SearchBox.Image = global::курсач.Properties.Resources.Search;
-            this.SearchBox.InitialImage = null;
-            this.SearchBox.Location = new System.Drawing.Point(420, 0);
-            this.SearchBox.Margin = new System.Windows.Forms.Padding(0);
-            this.SearchBox.Name = "SearchBox";
-            this.SearchBox.Size = new System.Drawing.Size(39, 39);
-            this.SearchBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.SearchBox.TabIndex = 1;
-            this.SearchBox.TabStop = false;
             // 
             // DataGridView
             // 
@@ -166,6 +152,7 @@
             this.DataGridView.ThemeStyle.RowsStyle.Height = 22;
             this.DataGridView.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.DataGridView.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.DataGridView.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridView_CellEndEdit);
             this.DataGridView.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.DataGridView_CellMouseClick);
             this.DataGridView.CellMouseDown += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.DataGridView_CellMouseDown);
             // 
@@ -182,7 +169,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.DeleteBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.AddBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PencilBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.SearchBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridView)).EndInit();
             this.ResumeLayout(false);
 
@@ -192,7 +178,6 @@
 
         private System.Windows.Forms.Panel panel1;
         private Guna.UI2.WinForms.Guna2DataGridView DataGridView;
-        private System.Windows.Forms.PictureBox SearchBox;
         private System.Windows.Forms.PictureBox DeleteBox;
         private System.Windows.Forms.PictureBox AddBox;
         private System.Windows.Forms.PictureBox PencilBox;
