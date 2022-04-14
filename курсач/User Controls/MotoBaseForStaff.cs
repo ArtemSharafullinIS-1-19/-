@@ -47,6 +47,8 @@ namespace курсач.User_Controls
             DataGridView.RowHeadersVisible = false;
             //Показываем заголовки столбцов
             DataGridView.ColumnHeadersVisible = true;
+
+
         }
 
         //Метод обновления DataGreed

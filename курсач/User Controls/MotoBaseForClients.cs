@@ -50,7 +50,7 @@ namespace курсач.User_Controls
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             String x;
-            for (int i = 0; i < dataGridView1.Rows.Count; i++)
+            for (int i = 2; i < dataGridView1.Rows.Count; i++)
             {
                 DataGridViewRow row = dataGridView1.Rows[0];
                 if (!row.IsNewRow)
@@ -60,21 +60,26 @@ namespace курсач.User_Controls
                 }
             }
 
+           
         }
 
         private void MotoBaseForClients_Load(object sender, EventArgs e)
         {
             dataGridView1.DataSource = Classes.DBConn.GetListUsers(request);
             //Видимость полей в гриде
-            for (int i = 0; i < dataGridView1.Columns.Count; i++)
-            {
-                dataGridView1.Columns[i].Visible = true;
-            }
+            dataGridView1.Columns[0].Visible = false;
+            dataGridView1.Columns[1].Visible = true;
+            dataGridView1.Columns[2].Visible = false;
+            dataGridView1.Columns[3].Visible = false;
+            dataGridView1.Columns[4].Visible = false;
+            dataGridView1.Columns[5].Visible = false;
+
             dataGridView1.Columns[0].FillWeight = 25;
             dataGridView1.Columns[1].FillWeight = 70;
             dataGridView1.Columns[2].FillWeight = 70;
             dataGridView1.Columns[3].FillWeight = 70;
             dataGridView1.Columns[4].FillWeight = 70;
+            dataGridView1.Columns[5].FillWeight = 70;
 
             //Растягивание полей грида
             for (int i = 0; i < dataGridView1.Columns.Count; i++)
