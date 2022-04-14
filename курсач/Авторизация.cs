@@ -137,8 +137,9 @@ namespace курсач
                 GetUserInfo(loginBox.Text);
                 //Вызов формы в режиме диалога
 
-                this.Close();
-                new Thread(() => Application.Run(new Просмотр_мотоциклов())).Start();
+                this.Hide();
+                Просмотр_мотоциклов Просмотр_мотоциклов = new Просмотр_мотоциклов();
+                Просмотр_мотоциклов.Show();
 
             }
             else

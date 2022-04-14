@@ -16,6 +16,10 @@ namespace курсач.User_Controls
         {
             InitializeComponent();
         }
+        public static string request = "SELECT id AS 'id', Stamp AS 'Марка', Power AS 'Мощьность', Number AS 'Номер мотоцикла', Color AS 'Цвет', Price AS 'Цена' FROM MotoBase";
+        //Переменная для ID записи в БД, выбранной в гриде. Пока она не содержит значения, лучше его инициализировать с 0
+        //что бы в БД не отправлялся null
+        public static string id_selected_rows = "0";
 
         class Info //хранение информации методов
         {
@@ -45,58 +49,43 @@ namespace курсач.User_Controls
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            String x;
+            for (int i = 0; i < dataGridView1.Rows.Count; i++)
+            {
+                DataGridViewRow row = dataGridView1.Rows[0];
+                if (!row.IsNewRow)
+                {
+                    x = row.Cells[0].Value.ToString() + " " + row.Cells[1].Value.ToString() + " " + row.Cells[2].Value.ToString() + " " + row.Cells[3].Value.ToString() + " " + row.Cells[4].Value.ToString() + " " + row.Cells[5].Value.ToString();
+                    listBox1.Items.Add(x);
+                }
+            }
 
         }
 
         private void MotoBaseForClients_Load(object sender, EventArgs e)
         {
-            //заполнение datagrid
-            DataGridViewTextBoxColumn col0 = new DataGridViewTextBoxColumn();
-            col0.HeaderText = "Марка";
-            col0.Name = "ID1";
+            dataGridView1.DataSource = Classes.DBConn.GetListUsers(request);
+            //Видимость полей в гриде
+            for (int i = 0; i < dataGridView1.Columns.Count; i++)
+            {
+                dataGridView1.Columns[i].Visible = true;
+            }
+            dataGridView1.Columns[0].FillWeight = 25;
+            dataGridView1.Columns[1].FillWeight = 70;
+            dataGridView1.Columns[2].FillWeight = 70;
+            dataGridView1.Columns[3].FillWeight = 70;
+            dataGridView1.Columns[4].FillWeight = 70;
 
-            this.dataGridView1.Columns.Add(col0);
-            
+            //Растягивание полей грида
+            for (int i = 0; i < dataGridView1.Columns.Count; i++)
+            {
+                dataGridView1.Columns[i].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            }
+            //Убираем заголовки строк
+            dataGridView1.RowHeadersVisible = false;
+            //Показываем заголовки столбцов
+            dataGridView1.ColumnHeadersVisible = true;
 
-
-            DataGridViewCell cel0 = new DataGridViewTextBoxCell();
-
-            DataGridViewRow row = new DataGridViewRow();
-            cel0.Value = "Honda";
-
-            row.Cells.AddRange(cel0);
-            this.dataGridView1.Rows.Add(row);
-            cel0 = new DataGridViewTextBoxCell();
-
-            row = new DataGridViewRow();
-            cel0.Value = "SUZUKI";
-
-            row.Cells.AddRange(cel0);
-            this.dataGridView1.Rows.Add(row);
-            cel0 = new DataGridViewTextBoxCell();
-
-            row = new DataGridViewRow();
-            cel0.Value = "BMW";
-
-            row.Cells.AddRange(cel0);
-            this.dataGridView1.Rows.Add(row);
-            cel0 = new DataGridViewTextBoxCell();
-
-            row = new DataGridViewRow();
-            cel0.Value = "YAMAHA";
-
-            row.Cells.AddRange(cel0);
-            this.dataGridView1.Rows.Add(row);
-            cel0 = new DataGridViewTextBoxCell();
-
-            row = new DataGridViewRow();
-            cel0.Value = "KAWASAKI";
-
-            row.Cells.AddRange(cel0);
-            this.dataGridView1.Rows.Add(row);
-            //msgbox с получением инфы
-            
-           
         }
     }
 }

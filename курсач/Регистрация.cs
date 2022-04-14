@@ -88,8 +88,9 @@ namespace курсач
 
                     MessageBox.Show("Вы успешно зарегистрировались!");
 
-                    this.Close();
-                    new Thread(() => Application.Run(new Просмотр_мотоциклов())).Start();
+                    this.Hide();
+                    Авторизация Авторизация = new Авторизация();
+                    Авторизация.ShowDialog();
                 }// вставь класс IsValid с Некита
                 else
                 {
