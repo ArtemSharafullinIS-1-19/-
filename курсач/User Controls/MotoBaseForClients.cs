@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -49,30 +50,16 @@ namespace курсач.User_Controls
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            String x;
-            for (int i = 2; i < dataGridView1.Rows.Count; i++)
-            {
-                DataGridViewRow row = dataGridView1.Rows[0];
-                if (!row.IsNewRow)
-                {
-                    x = row.Cells[0].Value.ToString() + " " + row.Cells[1].Value.ToString() + " " + row.Cells[2].Value.ToString() + " " + row.Cells[3].Value.ToString() + " " + row.Cells[4].Value.ToString() + " " + row.Cells[5].Value.ToString();
-                    listBox1.Items.Add(x);
-                }
-            }
+          
 
-           
+
         }
 
         private void MotoBaseForClients_Load(object sender, EventArgs e)
         {
             dataGridView1.DataSource = Classes.DBConn.GetListUsers(request);
             //Видимость полей в гриде
-            dataGridView1.Columns[0].Visible = false;
-            dataGridView1.Columns[1].Visible = true;
-            dataGridView1.Columns[2].Visible = false;
-            dataGridView1.Columns[3].Visible = false;
-            dataGridView1.Columns[4].Visible = false;
-            dataGridView1.Columns[5].Visible = false;
+           
 
             dataGridView1.Columns[0].FillWeight = 25;
             dataGridView1.Columns[1].FillWeight = 70;
@@ -91,6 +78,46 @@ namespace курсач.User_Controls
             //Показываем заголовки столбцов
             dataGridView1.ColumnHeadersVisible = true;
 
+        }
+
+        public void Request()
+        {
+            // устанавливаем соединение с БД
+            Classes.DBConn.conn.Open();
+            // запрос
+            string sql = $"SELECT isRenc FROM Stamp WHERE Марка={id_selected_rows} AND id={id}";
+            // объект для выполнения SQL-запроса
+            MySqlCommand command = new MySqlCommand(sql, Classes.DBConn.conn);
+            // выполняем запрос и получаем ответ
+            string name = command.ExecuteScalar().ToString();
+            // выводим ответ в TextBox
+            isRenc = name;
+            // закрываем соединение с БД
+            Classes.DBConn.conn.Close();
+        }
+        public static string isRenc = "";
+        private object id;
+
+        public void Renc()
+        {
+            Info.isRenc += Info.id_selected_rows + " ";
+            MessageBox.Show($"Аренда мотоцикла {Info.id_selected_rows} прошла успешно!", "Уведомление");
+        }
+
+        private void guna2Button1_Click_1(object sender, EventArgs e)
+        {
+            if (!Info.isRenc.Contains("true"))
+            {
+                Renc();
+                // устанавливаем соединение с БД
+                Classes.DBConn.conn.Open();
+                // запрос
+                //string sql =
+            }
+            else
+            {
+                MessageBox.Show($"Вы уже арендовали мотоцикл {Info.id_selected_rows}", "Уведомление");
+            }
         }
     }
 }

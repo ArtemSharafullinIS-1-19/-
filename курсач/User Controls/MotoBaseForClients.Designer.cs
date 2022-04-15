@@ -97,6 +97,7 @@
             this.guna2Button1.Size = new System.Drawing.Size(154, 42);
             this.guna2Button1.TabIndex = 2;
             this.guna2Button1.Text = "Арендовать";
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click_1);
             // 
             // guna2Button2
             // 
