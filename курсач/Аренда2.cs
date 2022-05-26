@@ -18,6 +18,7 @@ namespace курсач
         }
 
         int Roadhours = 0, Roadmins = 0, Roadseconds = 0;
+        double movesum = 0, gensum = 0;
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
@@ -28,7 +29,12 @@ namespace курсач
             this.Hide();
         }
 
-        double movesum = 0, gensum = 0;
+        
+
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+
+        }
 
         private void timer1_Tick_1(object sender, EventArgs e)
         {
@@ -45,15 +51,15 @@ namespace курсач
             }
             if (Roadhours < 10) label1.Text = "0" + Convert.ToString(Roadhours);
             else label1.Text = Convert.ToString(Roadhours);
-            if (Roadmins < 10) label2.Text = "0" + Convert.ToString(Roadmins);
-            else label2.Text = Convert.ToString(Roadmins);
-            if (Roadseconds < 10) label3.Text = "0" + Convert.ToString(Roadseconds);
-            else label3.Text = Convert.ToString(Roadseconds);
+            if (Roadmins < 10) label3.Text = "0" + Convert.ToString(Roadmins);
+            else label3.Text = Convert.ToString(Roadmins);
+            if (Roadseconds < 10) label6.Text = "0" + Convert.ToString(Roadseconds);
+            else label6.Text = Convert.ToString(Roadseconds);
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            timer1.Start();
+            timer1.Start(); 
         }
 
        

@@ -28,6 +28,27 @@ namespace курсач
             timer2.Start();
         }
 
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+            s = s - 1;
+            if (s == -1)
+            {
+                m = m - 1;
+                s = 59;
+            }
+            if (m == 0 && s == 0)
+            {
+                timer2.Stop();
+                flag = 1;
+                timer2.Start();
+            }
+
+            if (m < 10) label1.Text = "0" + Convert.ToString(m);
+            else label1.Text = Convert.ToString(m);
+            if (s < 10) label3.Text = "0" + Convert.ToString(s);
+            else label3.Text = Convert.ToString(s);
+        }
+
         private void guna2Button2_Click(object sender, EventArgs e)
         { 
            
@@ -43,24 +64,7 @@ namespace курсач
             this.Hide();
         }
 
-        private void timer2_Tick(object sender, EventArgs e)
-        {
-            seconds = seconds + 1;
-            if (seconds == 60)
-            {
-                mins = mins + 1;
-                seconds = 0;
-            }
-            if (mins == 60)
-            {
-                hours = hours + 1;
-                mins = 0;
-            }
-            if (hours < 10) label1.Text = "0" + Convert.ToString(hours);
-            else label1.Text = Convert.ToString(hours);
-            if (mins < 10) label3.Text = "0" + Convert.ToString(mins);
-            else label3.Text = Convert.ToString(mins);
-        }
+       
 
         private void timer1_Tick(object sender, EventArgs e)
         {

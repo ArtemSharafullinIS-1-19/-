@@ -12,28 +12,22 @@ namespace курсач
 {
     public partial class Конец : Form
     {
-        public Конец()
+        public Конец(double gensum)
         {
             InitializeComponent();
             this.gensum = gensum;
         }
-
-        public Конец(double gensum)
-        {
-            this.gensum = gensum;
-        }
-
         double gensum;
-
-        private void guna2Button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void Конец_Load(object sender, EventArgs e)
         {
             string gensum1 = Convert.ToString(gensum);
             label2.Text = Convert.ToString(gensum1) + " р";
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            Просмотр_мотоциклов m = new Просмотр_мотоциклов();
+            m.ShowDialog();
         }
     }
 }

@@ -108,13 +108,15 @@ namespace курсач.User_Controls
         {
             if (!Info.isRenc.Contains("true"))
             {
+                
                 Renc();
                 // устанавливаем соединение с БД
                 Classes.DBConn.conn.Open();
                 // запрос
                 //string sql =
                 Аренда аренда = new Аренда();
-                аренда.ShowDialog();
+                аренда.Show();
+                this.Hide();
 
             }
             else
