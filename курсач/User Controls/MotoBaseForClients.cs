@@ -113,6 +113,8 @@ namespace курсач.User_Controls
                 Classes.DBConn.conn.Open();
                 // запрос
                 //string sql =
+                Аренда аренда = new Аренда();
+                аренда.ShowDialog();
 
             }
             else
