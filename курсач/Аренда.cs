@@ -29,9 +29,9 @@ namespace курсач
         }
 
         private void guna2Button2_Click(object sender, EventArgs e)
-        {
+        { 
            
-            MainMenu m = new MainMenu();
+            Просмотр_мотоциклов m = new Просмотр_мотоциклов();
             m.Show();
             if (flag == 0) MessageBox.Show("Ваша поездка была отменена.", "Отмена поездки");
             if (flag == 1)
