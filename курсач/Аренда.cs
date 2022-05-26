@@ -43,17 +43,26 @@ namespace курсач
             this.Hide();
         }
 
-
-        private void guna2Button1_Click(object sender, EventArgs e)
+        private void timer2_Tick(object sender, EventArgs e)
         {
-            double sum = 0;
-            if (flag == 1) sum = 2 * (60 * hours + mins);
-            Form1 g = new Form1();
-            g.Show();
-            this.Hide();
+            seconds = seconds + 1;
+            if (seconds == 60)
+            {
+                mins = mins + 1;
+                seconds = 0;
+            }
+            if (mins == 60)
+            {
+                hours = hours + 1;
+                mins = 0;
+            }
+            if (hours < 10) label1.Text = "0" + Convert.ToString(hours);
+            else label1.Text = Convert.ToString(hours);
+            if (mins < 10) label3.Text = "0" + Convert.ToString(mins);
+            else label3.Text = Convert.ToString(mins);
         }
 
-        private void timer2_Tick(object sender, EventArgs e)
+        private void timer1_Tick(object sender, EventArgs e)
         {
             s = s - 1;
             if (s == -1)
@@ -68,31 +77,21 @@ namespace курсач
                 timer2.Start();
             }
 
-            if (m < 10) label4.Text = "0" + Convert.ToString(m);
-            else label4.Text = Convert.ToString(m);
-            
+            if (m < 10) label1.Text = "0" + Convert.ToString(m);
+            else label1.Text = Convert.ToString(m);
         }
-        private void timer3_Tick(object sender, EventArgs e)
+
+        private void guna2Button1_Click(object sender, EventArgs e)
         {
-
-
-            seconds = seconds + 1;
-            if (seconds == 60)
-            {
-                mins = mins + 1;
-                seconds = 0;
-            }
-            if (mins == 60)
-            {
-                hours = hours + 1;
-                mins = 0;
-            }
-            if (hours < 10) label1.Text = "0" + Convert.ToString(hours);
-            else label1.Text = Convert.ToString(hours);
-            if (mins < 10) label4.Text = "0" + Convert.ToString(mins);
-            else label4.Text = Convert.ToString(mins);
-           
+            double sum = 0;
+            if (flag == 1) sum = 2 * (60 * hours + mins);
+            Form1 g = new Form1();
+            g.Show();
+            this.Hide();
         }
+
+       
+       
     }
 
 

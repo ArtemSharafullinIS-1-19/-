@@ -135,6 +135,14 @@
             this.label1.TabIndex = 38;
             this.label1.Text = "30";
             // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // timer2
+            // 
+            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
+            // 
             // Аренда
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);

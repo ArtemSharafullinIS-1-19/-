@@ -112,6 +112,10 @@
             this.label3.TabIndex = 3;
             this.label3.Text = "00";
             // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick_1);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);

@@ -30,12 +30,7 @@ namespace курсач
 
         double movesum = 0, gensum = 0;
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            timer1.Start();
-        }
-
-        private void timer1_Tick(object sender, EventArgs e)
+        private void timer1_Tick_1(object sender, EventArgs e)
         {
             Roadseconds = Roadseconds + 1;
             if (Roadseconds == 60)
@@ -54,9 +49,13 @@ namespace курсач
             else label2.Text = Convert.ToString(Roadmins);
             if (Roadseconds < 10) label3.Text = "0" + Convert.ToString(Roadseconds);
             else label3.Text = Convert.ToString(Roadseconds);
-
-
-
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            timer1.Start();
+        }
+
+       
     }
 }
