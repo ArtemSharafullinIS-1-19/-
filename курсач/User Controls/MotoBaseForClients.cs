@@ -113,6 +113,7 @@ namespace курсач.User_Controls
                 Classes.DBConn.conn.Open();
                 // запрос
                 //string sql =
+
             }
             else
             {

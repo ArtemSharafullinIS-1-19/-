@@ -14,6 +14,7 @@ namespace курсач
 {
     public partial class Просмотр_мотоциклов : Form
     {
+       bool expectation;
         public Просмотр_мотоциклов()
         {
             InitializeComponent();
