@@ -38,6 +38,7 @@ namespace курсач.User_Controls
             label5.Text = Classes.Auth.auth_fio;
             label6.Text = Classes.Auth.auth_login;
             label7.Text = Classes.Auth.auth_doljnost;
+
         }
     }
 }

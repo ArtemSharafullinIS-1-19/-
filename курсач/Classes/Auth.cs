@@ -20,5 +20,7 @@ namespace курсач.Classes
         //Статичное поле, которое хранит количество привелегий пользователя
         public static string auth_doljnost = null;
         public static bool auth_is_admin = false;
+        internal static string auth_nameBox;
+        internal static string auth_number;
     }
 }

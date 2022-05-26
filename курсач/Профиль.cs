@@ -21,7 +21,7 @@ namespace курсач
         {
             label5.Text = Classes.Auth.auth_fio;
             label6.Text = Classes.Auth.auth_login;
-            label6.Text = Classes.Auth.auth_phone;
+            label7.Text = Classes.Auth.auth_phone;
 
 
         }

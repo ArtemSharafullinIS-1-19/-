@@ -26,7 +26,7 @@ namespace курсач
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            Просмотр_мотоциклов m = new Просмотр_мотоциклов();
+            Профиль m = new Профиль();
             m.ShowDialog();
         }
     }

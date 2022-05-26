@@ -19,6 +19,8 @@ namespace курсач
             public static string auth_fio = null;
             //Статичное поле, которое хранит количество привелегий пользователя
             public static int auth_role = 0;
+
+            
         }
 
         /// <summary>
