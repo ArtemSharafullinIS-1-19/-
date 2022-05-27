@@ -33,6 +33,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -61,6 +62,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.DarkRed;
+            this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.guna2Button1);
             this.panel1.Location = new System.Drawing.Point(-3, -2);
             this.panel1.Margin = new System.Windows.Forms.Padding(0);
@@ -99,6 +101,17 @@
             this.label2.TabIndex = 40;
             this.label2.Text = "Сумма";
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label3.Location = new System.Drawing.Point(15, 95);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(217, 24);
+            this.label3.TabIndex = 41;
+            this.label3.Text = "Полная сумма поезки";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
+            // 
             // Конец
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -112,6 +125,7 @@
             this.Text = "Конец";
             this.Load += new System.EventHandler(this.Конец_Load);
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -124,5 +138,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
     }
 }

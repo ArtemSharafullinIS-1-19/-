@@ -29,5 +29,10 @@ namespace курсач
             Профиль m = new Профиль();
             m.ShowDialog();
         }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
