@@ -63,6 +63,16 @@ namespace курсач.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _2f5dc462d0dcfa6448e5d896361e185b {
+            get {
+                object obj = ResourceManager.GetObject("2f5dc462d0dcfa6448e5d896361e185b", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Add {
             get {
                 object obj = ResourceManager.GetObject("Add", resourceCulture);
@@ -156,6 +166,17 @@ namespace курсач.Properties {
         internal static System.Drawing.Bitmap Phone {
             get {
                 object obj = ResourceManager.GetObject("Phone", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap purepng_com_kawasaki_ninja_300motorcyclemotorbikebikevehiclekawasaki_981525162532mfefe {
+            get {
+                object obj = ResourceManager.GetObject("purepng.com-kawasaki-ninja-300motorcyclemotorbikebikevehiclekawasaki-981525162532" +
+                        "mfefe", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

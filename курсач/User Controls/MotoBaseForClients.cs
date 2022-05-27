@@ -100,8 +100,8 @@ namespace курсач.User_Controls
 
         public void Renc()
         {
-            Info.isRenc += Info.id_selected_rows + " ";
-            MessageBox.Show($"Аренда мотоцикла {Info.id_selected_rows} прошла успешно!", "Уведомление");
+            
+            MessageBox.Show($"Аренда мотоцикла прошла успешно!");
         }
 
         private void guna2Button1_Click_1(object sender, EventArgs e)

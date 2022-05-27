@@ -26,6 +26,7 @@ namespace курсач
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
+            this.Hide();
             Профиль m = new Профиль();
             m.ShowDialog();
         }

@@ -38,11 +38,11 @@ namespace курсач
             this.MenuButton1 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.history1 = new курсач.User_Controls.History();
+            this.profil1 = new курсач.User_Controls.Profil();
             this.personal1 = new курсач.User_Controls.Personal();
             this.motoBase1 = new курсач.User_Controls.MotoBaseForClients();
             this.clients1 = new курсач.User_Controls.Clients();
             this.motoBaseForStaff1 = new курсач.User_Controls.MotoBaseForStaff();
-            this.profil1 = new курсач.User_Controls.Profil();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -240,6 +240,14 @@ namespace курсач
             this.history1.Size = new System.Drawing.Size(640, 450);
             this.history1.TabIndex = 9;
             // 
+            // profil1
+            // 
+            this.profil1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.profil1.Location = new System.Drawing.Point(0, 0);
+            this.profil1.Name = "profil1";
+            this.profil1.Size = new System.Drawing.Size(640, 450);
+            this.profil1.TabIndex = 13;
+            // 
             // personal1
             // 
             this.personal1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -274,14 +282,6 @@ namespace курсач
             this.motoBaseForStaff1.Name = "motoBaseForStaff1";
             this.motoBaseForStaff1.Size = new System.Drawing.Size(640, 450);
             this.motoBaseForStaff1.TabIndex = 1;
-            // 
-            // profil1
-            // 
-            this.profil1.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.profil1.Location = new System.Drawing.Point(0, 0);
-            this.profil1.Name = "profil1";
-            this.profil1.Size = new System.Drawing.Size(640, 450);
-            this.profil1.TabIndex = 13;
             // 
             // Просмотр_мотоциклов
             // 
