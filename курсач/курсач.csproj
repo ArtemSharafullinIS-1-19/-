@@ -217,6 +217,9 @@
     <EmbeddedResource Include="Аренда.resx">
       <DependentUpon>Аренда.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Аренда2.resx">
+      <DependentUpon>Аренда2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Конец.resx">
       <DependentUpon>Конец.cs</DependentUpon>
     </EmbeddedResource>
